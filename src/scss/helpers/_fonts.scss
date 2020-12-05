@@ -1,3 +1,19 @@
 @font-face {
-  @include includeFont(200, $first-font, "Montserrat-Thin");
+  @include includeFont(300, $first-font, "AvenirNextCyr-Light");
+}
+
+@font-face {
+  @include includeFont(400, $first-font, "AvenirNextCyr-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $first-font, "AvenirNextCyr-Medium");
+}
+
+@font-face {
+  @include includeFont(600, $first-font, "AvenirNextCyr-Demi");
+}
+
+@font-face {
+  @include includeFont(700, $first-font, "AvenirNextCyr-Bold");
 }
