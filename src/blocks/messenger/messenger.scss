@@ -1,0 +1,61 @@
+.messenger {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.messenger__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(#ffffff, 0.12);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+
+  svg {
+    width: 50%;
+    height: 100%;
+    transition: fill 0.3s;
+    fill: #ffffff;
+  }
+
+  &--whatsapp {
+    a:hover {
+      background-color: #ffffff;
+
+      svg {
+        fill: #00e783;
+      }
+    }
+  }
+
+
+  &--viber {
+    a:hover {
+      background-color: #ffffff;
+
+      svg {
+        fill: #7661ea;
+      }
+    }
+  }
+
+  &--telegram {
+    a:hover {
+      background-color: #ffffff;
+
+      svg {
+        fill: #45a3eb;
+      }
+    }
+  }
+}

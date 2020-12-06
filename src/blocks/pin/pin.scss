@@ -1,0 +1,86 @@
+.pin {
+  @include pseudo;
+  position: absolute;
+  width: 13px;
+  height: 6px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(239, 73, 50, 0) 2.6%, #ef4932 100%);
+  border-radius: 50%;
+
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    width: 30px;
+    height: 15px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(239, 73, 50, 0) 0%, #ef4932 100%);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: pulse 3s linear infinite;
+  }
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    top: -8px;
+    left: -17px;
+    width: 50px;
+    height: 25px;
+    background: #ef4932;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: pulse 3s linear infinite;
+  }
+}
+
+.pin__marker {
+  position: absolute;
+  top: -42px;
+  left: -15.5px;
+  width: 44px;
+  height: 46px;
+}
+
+@media (min-width: 1200px) {
+  .pin {
+    z-index: 10;
+    width: 34px;
+    height: 17px;
+
+    &::before {
+      top: -10px;
+      left: -21px;
+      width: 77px;
+      height: 40px;
+    }
+
+    &::after {
+      top: -21px;
+      left: -46px;
+      width: 126px;
+      height: 63px;
+    }
+  }
+
+  .pin__marker {
+    top: -110px;
+    left: -37.5px;
+    width: 111px;
+    height: 117px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}

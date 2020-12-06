@@ -1,0 +1,160 @@
+.nativejs-select {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+
+  &:hover {
+    border-color: #EF4932;
+  }
+}
+
+.nativejs-select__placeholder,
+.nativejs-select__option {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+}
+
+.nativejs-select__placeholder {
+  width: 100%;
+  padding: 12px 15px;
+  color: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #363F5F;
+  font-size: 14px;
+  line-height: 26px;
+  transition: all 0.3s;
+  /* identical to box height, or 186% */
+
+  border-radius: 0;
+  color: rgba(#FFFFFF, 0.5);
+}
+
+.nativejs-select__placeholder:after {
+  transition: all 0.3s;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  background-size: contain;
+  background-image: url("../../../img/select-dropdown.svg");
+  right: 20px;
+}
+
+.nativejs-select__placeholder img {
+  margin-right: 5px;
+}
+
+.nativejs-select__placeholder_fixed {
+  padding-right: 5px;
+  color: #7ca95c;
+}
+
+.nativejs-select__dropdown {
+  margin: 0;
+  padding: 0;
+  width: calc(100% + 2px);
+  position: absolute;
+  transform: translateY(100%);
+  left: -1px;
+  right: 0;
+  bottom: 0px;
+  transition: all 0.3s;
+  z-index: 5;
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nativejs-select__option {
+  width: 100%;
+  padding: 10px 15px;
+  color: #ccc;
+  background-color: #363F5F;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  &[data-selected="true"] {
+    color: #ffffff;
+    background-color: darken(#363F5F, 10);
+    pointer-events: none;
+    &:hover {
+      color: #ffffff;
+      background-color: darken(#363F5F, 10);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
+
+.nativejs-select__option img {
+  margin-right: 10px;
+}
+
+.nativejs-select__option:hover {
+  border-bottom: 1px solid #EF4932;
+  color: #EF4932;
+
+
+}
+
+.nativejs-select_active {
+  border: 1px solid #EF4932;
+  border-bottom-color: transparent;
+
+  .nativejs-select__dropdown {
+    border-color: #EF4932;
+    border-top-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.nativejs-select_active .nativejs-select__placeholder:after {
+  transform: rotate(180deg);
+}
+
+.nativejs-select_active .nativejs-select__dropdown {
+  display: block;
+  border-radius: 0 0 3px 3px;
+}
+
+.nativejs-select__search {
+  padding: 5px;
+}
+
+.nativejs-select__search-inp {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+.nativejs-select__placeholder-value {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nativejs-select__placeholder {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 19.5px 28px;
+
+    &::after {
+      right: 28px
+    }
+  }
+
+  .nativejs-select__option {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 19.5px 28px;
+  }
+
+}

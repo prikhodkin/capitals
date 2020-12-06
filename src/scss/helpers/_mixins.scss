@@ -54,7 +54,7 @@
     @if ($fallback) {
       font-size: $fallback;
     }
-    font-size: calcfluidfontsize($f-min, $f-max, $w-min, $w-max, px);
+    font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
   }
 
   @media (min-width: $w-max) {
@@ -108,4 +108,11 @@
   display: block;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@mixin reset() {
+  appearance: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
 }

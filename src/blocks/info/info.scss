@@ -1,0 +1,33 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  &--light {
+    color: #ffffff;
+  }
+}
+
+.info__img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .info__img {
+    width: 33px;
+    height: 33px;
+    margin-right: 13px;
+  }
+}
