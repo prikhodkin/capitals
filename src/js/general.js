@@ -140,14 +140,19 @@ function getCoords(elem) { // кроме IE8-
 }
 
 const about = document.querySelector(`.about`);
+const cta = document.querySelector(`.cta`);
 const chatMessages = document.querySelectorAll(`.chat__item`);
 let isChatAnimate = true;
 
 window.addEventListener(`scroll`, () => {
-  if(window.pageYOffset >= getCoords(about).top) {
+  if(window.pageYOffset >= (getCoords(about).top - 150)) {
     if(isChatAnimate) {
       animateChat();
     }
+  }
+
+  if(window.pageYOffset >= (getCoords(cta).top - 150)) {
+    cta.classList.add(`cta--active`);
   }
 })
 
