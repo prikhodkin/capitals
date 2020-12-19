@@ -1,0 +1,133 @@
+.complex {
+  padding: 25px 20px 270px 20px;
+  background-color: $c-main;
+  background-image: url("../../img/complex-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.complex__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 24px;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.complex__info {
+  margin-bottom: 30px;
+}
+
+.complex__item {
+  display: flex;
+  align-items: center;
+  padding-right: 23px;
+  background-color: #3b4770;
+
+  p {
+    margin-left: 23px;
+  }
+}
+
+
+.complex__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  gap: 20px;
+}
+
+.complex__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  background-color: $c-accent;
+
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .complex {
+    padding-bottom: 96px;
+  }
+
+  .complex__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    padding-top: 75px;
+  }
+
+  .complex__title {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: left;
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .complex__info {
+    margin-bottom: 0;
+  }
+
+  .complex__icon {
+    width: 66px;
+    min-width: 66px;
+    height: calc(100% + 24px);
+    //min-height: 66px;
+    //margin-top: -12px;
+    //margin-bottom: -12px;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .complex__list {
+    max-width: 660px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 50px 40px;
+  }
+
+  .complex__item {
+    min-height: 66px;
+    padding-top: 12px;
+    padding-right: 22px;
+    padding-bottom: 12px;
+
+    p {
+      margin-left: 29px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .complex {
+    @include page-wrapper;
+    background-size: unset;
+  }
+
+  .complex__top {
+    margin-bottom: 98px;
+  }
+}
