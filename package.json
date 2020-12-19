@@ -67,6 +67,7 @@
     "nativejs-select": "^1.0.7",
     "stimulus": "^1.1.1",
     "swiper": "^6.3.5",
+    "typewriter-effect": "^2.17.0",
     "vh-check": "^2.0.5",
     "wow.js": "^1.2.2"
   },

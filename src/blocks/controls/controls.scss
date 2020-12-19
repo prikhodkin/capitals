@@ -26,3 +26,15 @@
     fill: #ffffff;
   }
 }
+
+@media (min-width: 1200px) {
+  .controls__button {
+    width: 55px;
+    height: 55px;
+
+    svg {
+      width: 24px;
+      height: 12px;
+    }
+  }
+}

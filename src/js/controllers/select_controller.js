@@ -7,8 +7,6 @@ export default class extends Controller {
 
   connect() {
     this.init();
-
-    console.log('init')
   }
 
   init() {

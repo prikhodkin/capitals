@@ -9,6 +9,24 @@
       transform: unset;
     }
   }
+
+  &--light {
+    .field__input {
+      color: #000000;
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+    }
+
+    .field__label {
+      color: rgba(#000000, 0.5);
+    }
+  }
+
+  &--error {
+    .field__label {
+      color: $c-accent;
+    }
+  }
 }
 
 .field__label {
@@ -20,6 +38,7 @@
   color: rgba(#ffffff, 0.5);
   transform: translateY(-50%);
   transition: all 0.3s;
+  pointer-events: none;
 }
 
 .field__input {
@@ -48,9 +67,11 @@
 
 @media (min-width: 768px) {
   .field__label {
+    top: 19px;
     left: 30px;
     font-size: 12px;
     line-height: 26px;
+    transform: unset;
   }
 
   .field__input {
