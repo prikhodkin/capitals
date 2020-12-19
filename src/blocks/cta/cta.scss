@@ -142,17 +142,17 @@
 
   .cta__description {
     max-width: 513px;
+    margin-bottom: 80px;
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 80px;
   }
 
   .cta__place {
     max-width: 323px;
     padding: 36px 33px;
-    background-position: bottom 12px right 10px;
     background-image: url("../../img/dots-cta.svg");
     background-repeat: no-repeat;
+    background-position: bottom 12px right 10px;
   }
 
   .cta__icon {
@@ -170,10 +170,6 @@
     margin-bottom: 15px;
     font-size: 22px;
     line-height: 27px;
-  }
-
-  .cta__description {
-
   }
 }
 
