@@ -141,6 +141,7 @@ function getCoords(elem) { // кроме IE8-
 
 const about = document.querySelector(`.about`);
 const cta = document.querySelector(`.cta`);
+const consultation = document.querySelector(`.consultation`);
 const chatMessages = document.querySelectorAll(`.chat__item`);
 let isChatAnimate = true;
 
@@ -153,6 +154,10 @@ window.addEventListener(`scroll`, () => {
 
   if(window.pageYOffset >= (getCoords(cta).top - 150)) {
     cta.classList.add(`cta--active`);
+  }
+
+  if(window.pageYOffset >= (getCoords(consultation).top - 150)) {
+    consultation.classList.add(`consultation--active`);
   }
 })
 
