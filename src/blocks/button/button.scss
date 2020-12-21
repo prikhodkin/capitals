@@ -25,6 +25,13 @@
   &:active {
     box-shadow: none;
   }
+
+  &--thin {
+    color: $c-accent;
+    background-color: transparent;
+    border: 1px solid $c-accent;
+    box-shadow: unset;
+  }
 }
 
 @media (min-width: 550px) {

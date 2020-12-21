@@ -37,7 +37,27 @@
   height: unset;
   margin-top: 55px;
   padding: 44px 0 0 0;
+  background-color: #ffffff;
   border: 1px solid #3b5998;
+  transition: background-color, color 0.3s;
+
+  &:hover {
+    background-color: #2e3758;
+
+    .receive__img {
+      border-color: #ffffff;
+    }
+
+    .receive__content {
+      &::before {
+        color: #c4c4c4;
+      }
+    }
+
+    .receive__text {
+      color: #ffffff;
+    }
+  }
 
   .receive__content {
     &::before {
@@ -83,6 +103,8 @@
   width: 79px;
   height: 79px;
   background-color: $c-main;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
 
   img {
     width: 50px;
