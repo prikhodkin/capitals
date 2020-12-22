@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Capitals Logistic</title>
+  @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header header--light">
+  <a href="#" class="header__logo logo">
+    <img src="../../img/logo@dark.svg" alt="logo">
+  </a>
+  <nav class="header__menu menu">
+    <button class="menu__burger">
+      <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1" y1="1" x2="33" y2="1" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="11" x2="19" y2="11" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+        <line x1="25" y1="11" x2="33" y2="11" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="21" x2="33" y2="21" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#">link1</a></li>
+      <li class="menu__item"><a href="#">link1</a></li>
+    </ul>
+  </nav>
+  <div class="header__right">
+    <div class="header__contacts">
+      <a href="#" class="header__phone">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-phone"></use>
+        </svg>
+        +7 800 360-45-77
+      </a>
+      <p class="header__time">Пн-Пт с 9:00 до 21:00</p>
+    </div>
+    <ul class="header__language language">
+      <li class="language__item"><a href="">RU</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+  <section class="hero hero--light" data-controller="hero">
+    <div class="hero__tabs tabs" data-tabs>
+      <div class="hero__wrapper">
+        <div class="tabs__content " data-content="1">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-0@desktop.jpg">
+              <img src="../img/hero-0@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Запчасти оборудование</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content tabs__content--active" data-content="2">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-1@desktop.jpg">
+              <img src="../img/hero-1@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Детские игрушки</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="3">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-2@desktop.jpg">
+              <img src="../img/hero-2@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Спортивное питание</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="4">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-3@desktop.jpg">
+              <img src="../img/hero-3@mobile.svg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Косметика и парфюмерия</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="5">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-4@desktop.jpg">
+              <img src="../img/hero-4@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Сервера, IT комплектующие</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="6">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-5@desktop.jpg">
+              <img src="../img/hero-5@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Одежда, обувь, текстиль</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="7">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-6@desktop.jpg">
+              <img src="../img/hero-6@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Товары из интернет магазинов</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="8">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-7@desktop.jpg">
+              <img src="../img/hero-7@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Мебель, сантехника, интерьер</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="9">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-9@desktop.jpg">
+              <img src="../img/hero-9@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Разовые посылки</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="10">
+          <div class="hero__body">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/hero-10@desktop.jpg">
+              <img src="../img/hero-10@mobile.jpg" class="hero__img" alt="">
+            </picture>
+            <div class="hero__content">
+              <h2 class="hero__name">Спецпредложение для байеров</h2>
+              <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+              <div class="hero__row">
+                <a href="" class="hero__button button">Рассчитать стоимость</a>
+                <p class="hero__text">Мы также доставляем одиночные посылки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container" data-target="hero.container">
+        <ul class="hero__list tabs__list swiper-wrapper">
+          <li class="tabs__item swiper-slide" data-tab="1">Запчасти, оборудование</li>
+          <li class="tabs__item swiper-slide tabs__item--active" data-tab="2">Игрушки</li>
+          <li class="tabs__item swiper-slide" data-tab="3">Спортивное питание</li>
+          <li class="tabs__item swiper-slide" data-tab="4">Косметика и парфюмерия</li>
+          <li class="tabs__item swiper-slide" data-tab="5">Сервера, IT комплектующие</li>
+          <li class="tabs__item swiper-slide" data-tab="6">Одежда, обувь, текстиль</li>
+          <li class="tabs__item swiper-slide" data-tab="7">Товары из интернет магазинов</li>
+          <li class="tabs__item swiper-slide" data-tab="8">Мебель, сантехника, интерьер</li>
+          <li class="tabs__item swiper-slide" data-tab="9">Разовые посылки</li>
+          <li class="tabs__item swiper-slide" data-tab="10">Спецпредложение для байеров</li>
+        </ul>
+
+      </div>
+      <div class="hero__controls controls">
+        <button class="controls__button" data-target="hero.prev">
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="controls__button" data-target="hero.next">
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  @@include('../blocks/deadlines/deadlines.html')
+  @@include('../blocks/information/information.html')
+  @@include('../blocks/offers/offers.html')
+  @@include('../blocks/about/about.html')
+  @@include('../blocks/cta/cta.html')
+  @@include('../blocks/process/process.html')
+  @@include('../blocks/complex/complex.html')
+  @@include('../blocks/reviews/reviews.html')
+  @@include('../blocks/request/request.html')
+  @@include('../blocks/consultation/consultation.html')
+</main>
+@@include('../blocks/footer/footer.html')
+@@include('../blocks/popup/popup.html')
+<script src="js/vendor.js"></script>
+<script src="js/general.js"></script>
+</body>
+</html>

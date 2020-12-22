@@ -1,3 +1,37 @@
+.hero {
+  &--light {
+    .hero__tabs {
+      background: #f6f6f6;
+    }
+
+    .hero__name {
+      color: #000000;
+    }
+
+    .hero__description {
+      color: #000000;
+    }
+
+    .hero__text {
+      color: #000000;
+    }
+
+    .hero__controls {
+      display: none;
+    }
+
+    .swiper-container {
+      margin: 0;
+    }
+
+    .hero__list {
+      .tabs__item {
+        color: #000000;
+      }
+    }
+  }
+}
+
 .hero__tabs {
   position: relative;
   display: flex;
@@ -64,6 +98,7 @@
   overflow: auto;
 
   .tabs__item {
+    width: auto;
     padding-bottom: 5px;
     font-weight: 500;
     font-size: 12px;
@@ -87,6 +122,14 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    &--light {
+      .swiper-container {
+        margin-top: auto;
+      }
+    }
+  }
+
   .hero__list {
     margin-top: auto;
 
@@ -106,7 +149,6 @@
   }
 
 
-
   .hero__body {
     max-width: 298px;
     padding-right: 0;
@@ -114,6 +156,40 @@
 }
 
 @media (min-width: 1200px) {
+  .hero {
+    &--light {
+      .hero__list {
+        width: 100%;
+        overflow: unset;
+
+        .tabs__item {
+          width: auto;
+        }
+      }
+
+
+      .hero__inner {
+        align-self: flex-end;
+        width: 1036px;
+      }
+
+      .swiper-container {
+        display: flex;
+        width: 1036px;
+      }
+
+      .hero__controls {
+        position: absolute;
+        right: calc(50% - 585px);
+        bottom: 0;
+        z-index: 30;
+        display: flex;
+        margin-bottom: 14px;
+        margin-left: auto;
+      }
+    }
+  }
+
   .hero__tabs {
     @include page-wrapper;
     min-height: 836px;
@@ -124,6 +200,7 @@
   }
 
   .hero__name {
+    max-width: 560px;
     margin-bottom: 20px;
     font-size: 45px;
     line-height: 52px;
