@@ -6,7 +6,7 @@
   transition: all 0.3s;
 
   &--active {
-    position: relative;
+    position: static;
     left: unset;
     z-index: unset;
     opacity: 1;

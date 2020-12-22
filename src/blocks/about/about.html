@@ -1,0 +1,75 @@
+<section class="about" data-controller="slider-about">
+  <div class="about__inner">
+    <div class="about__chat chat chat--active">
+      <ul class="chat__list">
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Capitals Logistics</span>
+            <span class="chat__time">16:24</span>
+          </div>
+          <div class="chat__text" data-time="2500" data-word="Виктор, Ваш груз уже на гарнице"></div>
+        </li>
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Виктор</span>
+            <span  class="chat__time">16:31</span>
+          </div>
+          <div data-word="Ок!" data-time="3000" class="chat__text"></div>
+        </li>
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Capitals Logistics</span>
+            <span class="chat__time">20:04</span>
+          </div>
+          <div data-time="2000" data-word="Виктор, Ваш груз прошёл границу раньше, через час ожидайте на складе" class="chat__text"></div>
+        </li>
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Виктор</span>
+            <span class="chat__time">20:15</span>
+          </div>
+          <div data-time="3000" data-word="Отлично, ждём" class="chat__text"></div>
+        </li>
+      </ul>
+      <img src="../img/chat.png" alt="" class="about__img">
+    </div>
+    <div class="about__content">
+      <div class="about__place">Доставим с любовью</div>
+      <h2 class="about__title"><b>А пока ваш груз в пути,</b> вы можете наслаждаться нашим сервисом</h2>
+      <div class="swiper-container" data-target="slider-about.container">
+        <ul class="about__list swiper-wrapper">
+          <li class="about__item swiper-slide">
+            <span class="about__action">Просто</span>
+            <img src="../img/binoculars.svg" alt="" class="about__icon">
+            <p class="about__name">Следим за грузом и решаем все проблемы без вашего участия</p>
+            <p class="about__text">К вашему проекту будет закреплен персональный менеджер или команда, которая решает все воросы в пути, не беспокоя вас, вам требуется уделять 2-3 минуты в день, чтобы просмотреть отчет</p>
+          </li>
+          <li class="about__item swiper-slide">
+            <span class="about__action">Быстро</span>
+            <img src="../img/world.svg" alt="" class="about__icon">
+            <p class="about__name">Без задержек, с гарантией сохранности</p>
+            <p class="about__text">Расчёт стоимости за 10 минут, подача нужного транспорта в день заказа, за каждую минуту просрочки платим штраф</p>
+          </li>
+          <li class="about__item swiper-slide">
+            <span class="about__action">Приятно</span>
+            <img src="../img/heart-box.svg" alt="" class="about__icon">
+            <p class="about__name">Бонусная программа, для клиентов и перевозчиков</p>
+            <p class="about__text">С каждым заказом, ваша работа с нами будет становится выгоднее</p>
+          </li>
+        </ul>
+        <div class="about__controls controls">
+          <button class="controls__button" data-target="slider-about.prev">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="controls__button" data-target="slider-about.next">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
