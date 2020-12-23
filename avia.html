@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Capitals Logistic</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+  <a href="#" class="header__logo logo">
+    <img src="img/logo.svg" alt="logo">
+  </a>
+  <nav class="header__menu menu">
+    <button class="menu__burger">
+      <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1" y1="1" x2="33" y2="1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="11" x2="19" y2="11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="25" y1="11" x2="33" y2="11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="21" x2="33" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#">link1</a></li>
+      <li class="menu__item"><a href="#">link1</a></li>
+    </ul>
+  </nav>
+  <div class="header__right">
+    <div class="header__contacts">
+      <a href="#" class="header__phone">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-phone"></use>
+        </svg>
+        +7 800 360-45-77
+      </a>
+      <p class="header__time">Пн-Пт с 9:00 до 21:00</p>
+    </div>
+    <ul class="header__language language">
+      <li class="language__item"><a href="">RU</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+  <div class="hero__tabs tabs" data-tabs>
+    <div class="hero__wrapper">
+      <div class="tabs__content" data-content="1">
+        <div class="hero__body">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/hero-sea@desktop.jpg">
+            <img src="img/hero-sea@mobile.jpg" class="hero__img" alt="">
+          </picture>
+          <div class="hero__content">
+            <h2 class="hero__name">Доставка по морю</h2>
+            <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+            <div class="hero__row">
+              <a href="" class="hero__button button">Рассчитать стоимость</a>
+              <p class="hero__text">Мы также доставляем одиночные посылки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content tabs__content--active" data-content="2">
+        <div class="hero__body">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/hero-aribus@desktop.jpg">
+            <img src="img/hero-airbus@mobile.jpg" class="hero__img" alt="">
+          </picture>
+          <div class="hero__content">
+            <h2 class="hero__name">Доставка самолётом</h2>
+            <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+            <div class="hero__row">
+              <a href="" class="hero__button button">Рассчитать стоимость</a>
+              <p class="hero__text">Мы также доставляем одиночные посылки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content" data-content="3">
+        <div class="hero__body">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/hero-car@desktop.jpg">
+            <img src="img/hero-car@mobile.jpg" class="hero__img" alt="">
+          </picture>
+          <div class="hero__content">
+            <h2 class="hero__name">Доставка пикопом </h2>
+            <p class="hero__description">в самые сжатые сроки c финансовой гарантией избавим от головной боли с таможней, сертификацией, страховкой, с ACCOM вы всегда в выигрыше </p>
+            <div class="hero__row">
+              <a href="" class="hero__button button">Рассчитать стоимость</a>
+              <p class="hero__text">Мы также доставляем одиночные посылки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="hero__list tabs__list">
+      <li class="tabs__item " data-tab="1">Доставка по морю</li>
+      <li class="tabs__item tabs__item--active" data-tab="2">Доставка самолётом</li>
+      <li class="tabs__item " data-tab="3">Доставка пикапом</li>
+    </ul>
+  </div>
+</section>
+
+  <section class="deadlines">
+  <div class="deadlines__days">
+    <p class="deadlines__day"><span>14</span>-<span>16</span></p>
+    <span class="deadlines__label">дней</span>
+  </div>
+  <div class="deadlines__content">
+    <h2 class="deadlines__title">Сроки и этапы доставки</h2>
+    <div class="deadlines__text">
+      <p>Срок доставки вашего груза от нашего склада в США до Москвы составляет около 14 дней от вылета самолета (выделить как-то). Самолет вылетает каждую неделю.</p>
+      <p>Подробнее о сроках доставки из США <a href="">читайте тут</a> (ссылка на старницу Сроки доставки)</p>
+    </div>
+  </div>
+</section>
+
+  <section class="information">
+  <h2 class="visually-hidden">Важная информация</h2>
+  <div class="information__icon">
+    <img src="img/warning-sign.svg" alt="">
+  </div>
+  <p class="information__text">Все грузы попадают в РФ абсолютно легально, проходя растаможку. Помните, что правильное описание - залог сохранности груза и ваша страховка от конфискации таможенными органами</p>
+</section>
+
+  <section class="offers">
+  <div class="offers__top">
+    <h2 class="offers__title title title--light"><span>Предложим </span>оптимальное решение</h2>
+    <p class="offers__info info info--light">
+      <img class="info__img" src="img/time.svg" >
+      Сделаем расчет за 30 минут
+    </p>
+  </div>
+  <div class="offers__body">
+    <div class="offers__inner">
+      <form action="" class="offers__form">
+        <h3 class="offers__subtitle">Расчет стоимости доставки из сша</h3>
+        <div class="offers__group">
+          <div class="offers__item select" data-controller="select">
+            <label for="t1" class="select__label">Тип груза</label>
+            <select name="type" id="t1" class="select__input" data-target="select.input">
+              <option value="Тип груза">Тип груза</option>
+              <option value="Опасный">Опасный</option>
+            </select>
+          </div>
+          <div class="offers__item field">
+            <input autocomplete="off" type="text" name="weight" id="t2" class="field__input">
+            <label for="t2" class="field__label">Вес груза</label>
+          </div>
+          <div class="offers__item field">
+            <input autocomplete="off" type="text" name="weight" id="t3" class="field__input">
+            <label for="t3" class="field__label">Ваше имя</label>
+          </div>
+          <div class="offers__item field">
+            <input autocomplete="off" type="text" inputmode="tel" name="weight" id="t4" class="field__input field__input--phone">
+            <label for="t4" class="field__label">Ваш телефон</label>
+          </div>
+          <div class="offers__item field">
+            <input autocomplete="off" type="email" name="weight" id="t5" class="field__input">
+            <label for="t5" class="field__label">Ваша почта</label>
+          </div>
+          <div class="offers__item field">
+            <textarea autocomplete="off" name="weight" id="t6" class="field__input field__textarea"></textarea>
+            <label for="t6" class="field__label">Комментарий по заказу</label>
+          </div>
+        </div>
+        <div class="offers__row">
+          <div class="offers__receive">
+            <p class="offers__header">Вы получите</p>
+            <p class="offers__info">
+              <img src="img/offers-icon.svg" alt="" class="offers__icon">
+              Юр лицам предоставляются все документы на груз
+            </p>
+          </div>
+          <div class="offers__controls">
+            <button class="offers__button button">Рассчитать стоимость</button>
+            <p class="offers__desc">С расчетом вы получите консультацию под кнопку рассчитать стоимость</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <section class="about" data-controller="slider-about">
+  <div class="about__inner">
+    <div class="about__chat chat chat--active">
+      <ul class="chat__list">
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Capitals Logistics</span>
+            <span class="chat__time">16:24</span>
+          </div>
+          <div class="chat__text" data-time="2500" data-word="Виктор, Ваш груз уже на гарнице"></div>
+        </li>
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Виктор</span>
+            <span  class="chat__time">16:31</span>
+          </div>
+          <div data-word="Ок!" data-time="3000" class="chat__text"></div>
+        </li>
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Capitals Logistics</span>
+            <span class="chat__time">20:04</span>
+          </div>
+          <div data-time="2000" data-word="Виктор, Ваш груз прошёл границу раньше, через час ожидайте на складе" class="chat__text"></div>
+        </li>
+        <li class="chat__item">
+          <div class="chat__top">
+            <span class="chat__name">Виктор</span>
+            <span class="chat__time">20:15</span>
+          </div>
+          <div data-time="3000" data-word="Отлично, ждём" class="chat__text"></div>
+        </li>
+      </ul>
+      <img src="img/chat.png" alt="" class="about__img">
+    </div>
+    <div class="about__content">
+      <div class="about__place">Доставим с любовью</div>
+      <h2 class="about__title"><b>А пока ваш груз в пути,</b> вы можете наслаждаться нашим сервисом</h2>
+      <div class="swiper-container" data-target="slider-about.container">
+        <ul class="about__list swiper-wrapper">
+          <li class="about__item swiper-slide">
+            <span class="about__action">Просто</span>
+            <img src="img/binoculars.svg" alt="" class="about__icon">
+            <p class="about__name">Следим за грузом и решаем все проблемы без вашего участия</p>
+            <p class="about__text">К вашему проекту будет закреплен персональный менеджер или команда, которая решает все воросы в пути, не беспокоя вас, вам требуется уделять 2-3 минуты в день, чтобы просмотреть отчет</p>
+          </li>
+          <li class="about__item swiper-slide">
+            <span class="about__action">Быстро</span>
+            <img src="img/world.svg" alt="" class="about__icon">
+            <p class="about__name">Без задержек, с гарантией сохранности</p>
+            <p class="about__text">Расчёт стоимости за 10 минут, подача нужного транспорта в день заказа, за каждую минуту просрочки платим штраф</p>
+          </li>
+          <li class="about__item swiper-slide">
+            <span class="about__action">Приятно</span>
+            <img src="img/heart-box.svg" alt="" class="about__icon">
+            <p class="about__name">Бонусная программа, для клиентов и перевозчиков</p>
+            <p class="about__text">С каждым заказом, ваша работа с нами будет становится выгоднее</p>
+          </li>
+        </ul>
+        <div class="about__controls controls">
+          <button class="controls__button" data-target="slider-about.prev">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="controls__button" data-target="slider-about.next">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="cta">
+  <div class="cta__content">
+    <h2 class="cta__title">Что бы перевезти груз, вам потребуется только <b>1 действие и 2-3 минуты в день</b></h2>
+    <p class="cta__description">Все остальное мы берем на себя и несем финаносую ответственность за груз, просрочки, форс мажоры</p>
+    <div class="cta__place">
+      <p class="cta__top">От вас <span>1</span> действие</p>
+      <div class="cta__icon">
+        <img src="img/call-2.svg" alt="">
+      </div>
+      <div class="cta__name">Оставить заявку и описать задачу</div>
+      <p class="cta__text">Заявку вы можете оставить в любом месте на сайте или позвонить
+        <a href="tel:+7800 360-45-77">+7800 360-45-77</a></p>
+      <a href="#" class="cta__button button">Оставить заявку</a>
+    </div>
+  </div>
+  <img src="img/car@clean.png" alt="" class="cta__img">
+</section>
+
+  <section class="process" data-controller="slider-about">
+  <div class="process__top">
+    <h2 class="process__title">Далее мы делаем <span>всю работу</span></h2>
+    <div class="process__controls controls">
+      <button class="controls__button" data-target="slider-about.prev">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="controls__button" data-target="slider-about.next">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="swiper-container" data-target="slider-about.container">
+    <ul class="process__list swiper-wrapper">
+      <li class="process__item swiper-slide">
+        <span class="process__count">01</span>
+        <p class="process__name">Прокладываем маршрут, расчитываем стоимость и срок</p>
+        <p class="process__text">Прокладываем маршрут, находим нужный транспорт</p>
+        <span class="process__number">01</span>
+      </li>
+      <li class="process__item swiper-slide">
+        <span class="process__count">02</span>
+        <p class="process__name">Экспресс оформление, договора</p>
+        <p class="process__text">Документально фиксируем задачу, стоимость, оформляем страховку на груз, высылаем нужный пакет документов, вам на подпись или проверку вашему юристу</p>
+        <a href="" class="process__link">Пример договора</a>
+        <span class="process__number">02</span>
+      </li>
+      <li class="process__item swiper-slide">
+        <span class="process__count">03</span>
+        <p class="process__name">Подача транспорта, в нужное время и загрузка груза</p>
+        <p class="process__text">Проверяем документы на груз, следим за тем, чтобы ваш груз был загружен без повреждений и надежно закрпеплен</p>
+        <a href="" class="process__link">Какие документы проверяем</a>
+        <span class="process__number">03</span>
+      </li>
+      <li class="process__item swiper-slide">
+        <span class="process__count">04</span>
+        <p class="process__name">Прохождение таможни, без очередей</p>
+        <p class="process__text">Оформляем все нужные документы, декларации, сертификаты, используем собственную методику, для прохождения таможни, с первого раза, без очередей</p>
+        <a href="" class="process__link">Какие документы проверяем</a>
+        <span class="process__number">04</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <section class="complex">
+  <div class="complex__top">
+    <h2 class="complex__title title title--light"><span>Полный</span> комплекс услуг</h2>
+    <p class="complex__info info info--light">
+      <img class="info__img" src="img/complex-icon.svg" >
+      Возсожна доставка одиночных грузов
+    </p>
+  </div>
+  <ul class="complex__list">
+    <li class="complex__item">
+      <div class="complex__icon">
+        <img src="img/complex-01.svg" alt="">
+      </div>
+      <p>Переупаковка грузов</p>
+    </li>
+    <li class="complex__item">
+      <div class="complex__icon">
+        <img src="img/complex-02.svg" alt="">
+      </div>
+      <p>Страхование от рисков</p>
+    </li>
+    <li class="complex__item">
+      <div class="complex__icon">
+        <img src="img/complex-03.svg" alt="">
+      </div>
+      <p>Ответственное складское хранение</p>
+    </li>
+    <li class="complex__item">
+      <div class="complex__icon">
+        <img src="img/complex-04.svg" alt="">
+      </div>
+      <p>Пикап груза по США</p>
+    </li>
+    <li class="complex__item">
+      <div class="complex__icon">
+        <img src="img/complex-05.svg" alt="">
+      </div>
+      <p>Выкуп товаров с интернет аукционов и интернет магазинов</p>
+    </li>
+    <li class="complex__item">
+      <div class="complex__icon">
+        <img src="img/complex-06.svg" alt="">
+      </div>
+      <p>Консолидация грузов</p>
+    </li>
+  </ul>
+</section>
+
+  <section class="reviews" data-controller="reviews">
+  <div class="reviews__place">Решаем самые неординарные, тяжелые задачи</div>
+  <h2 class="reviews__title title">Выполненные проекты <span>и отзывы</span></h2>
+  <p class="reviews__description">Мы не можем выложить все проекты в открытый достпу поскольку подписали NDA (?) но вот несколько задач, которыми мы гордимся</p>
+  <div class="swiper-container" data-target="reviews.container">
+    <ul class="reviews__list swiper-wrapper">
+      <li class="reviews__item swiper-slide">
+        <div class="swiper-container reviews__wrapper" data-target="reviews.inner">
+          <ul class="reviews__imgs swiper-wrapper">
+            <li class="reviews__img swiper-slide"><img src="img/reviews-01.jpg" alt=""></li>
+            <li class="reviews__img swiper-slide"><img src="img/reviews-01.jpg" alt=""></li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="reviews__content">
+          <p class="reviews__name">Доставка <span>из Германии в Казахстан,</span> груза стоимостью 1.000.000 евро</p>
+          <p class="reviews__text">Ключевые показатели проекта:</p>
+          <ul class="reviews__keys">
+            <li class="reviews__key">
+              <img src="img/truck.svg" alt="" class="reviews__icon"><span>Вид доставки: </span>Авто
+            </li>
+            <li class="reviews__key">
+              <img src="img/set.svg" alt="" class="reviews__icon"><span>Оказали: </span>6 услуг
+            </li>
+            <li class="reviews__key">
+              <img src="img/box-2.svg" alt="" class="reviews__icon"><span>Груз: </span>Моторы Mercedes
+            </li>
+            <li class="reviews__key">
+              <img src="img/clock.svg" alt="" class="reviews__icon"><span>Срок доставки: </span>7 дней
+            </li>
+            <li class="reviews__key">
+              <img src="img/car-2.svg" alt="" class="reviews__icon"><span>Проехали: </span>4.000 км.
+            </li>
+            <li class="reviews__key">
+              <img src="img/piggy-bank.svg" alt="" class="reviews__icon"><span>Сэкономили клиету: </span>20.000 евро
+            </li>
+          </ul>
+          <a href="#" class="button button--thin">Отзыв клиента</a>
+        </div>
+      </li>
+      <li class="reviews__item swiper-slide">
+        <div class="swiper-container reviews__wrapper" data-target="reviews.inner">
+          <ul class="reviews__imgs swiper-wrapper">
+            <li class="reviews__img swiper-slide"><img src="img/reviews-01.jpg" alt=""></li>
+            <li class="reviews__img swiper-slide"><img src="img/reviews-01.jpg" alt=""></li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="reviews__content">
+          <p class="reviews__name">Доставка <span>из Германии в Казахстан,</span> груза стоимостью 1.000.000 евро</p>
+          <p class="reviews__text">Ключевые показатели проекта:</p>
+          <ul class="reviews__keys">
+            <li class="reviews__key">
+              <img src="img/truck.svg" alt="" class="reviews__icon"><span>Вид доставки: </span>Авто
+            </li>
+            <li class="reviews__key">
+              <img src="img/set.svg" alt="" class="reviews__icon"><span>Оказали: </span>6 услуг
+            </li>
+            <li class="reviews__key">
+              <img src="img/box-2.svg" alt="" class="reviews__icon"><span>Груз: </span>Моторы Mercedes
+            </li>
+            <li class="reviews__key">
+              <img src="img/clock.svg" alt="" class="reviews__icon"><span>Срок доставки: </span>7 дней
+            </li>
+            <li class="reviews__key">
+              <img src="img/car-2.svg" alt="" class="reviews__icon"><span>Проехали: </span>4.000 км.
+            </li>
+            <li class="reviews__key">
+              <img src="img/piggy-bank.svg" alt="" class="reviews__icon"><span>Сэкономили клиету: </span>20.000 евро
+            </li>
+          </ul>
+          <a href="#" class="button button--thin">Отзыв клиента</a>
+        </div>
+      </li>
+    </ul>
+    <div class="reviews__controls controls">
+      <button class="controls__button" data-target="reviews.prev">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="controls__button" data-target="reviews.next">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <a href="#" class="reviews__button button">Рассчитать стоимость</a>
+  <p class="reviews__preinfo">Работаем с любым объемом, от 40кг. до грузов стоимостью милионы евро</p>
+</section>
+
+  <section class="request">
+  <div class="request__inner">
+    <img src="img/request-img.png" alt="" class="request__img">
+    <div class="request__content">
+      <h2 class="request__title"><span>Предоставим контакты клиентов, которые</span> расскажут вам о нашей работе</h2>
+      <p class="request__description">По мелким вопросам мы не беспокоим, а если у вас есть вопрос или нужна помощь, вы можете написать или позвонить вашему персональному менеджеру</p>
+      <form data-controller="send-form" data-action="submit->send-form#send" action="post" class="request__form">
+        <div class="request__fields">
+          <div class="request__field field" data-message="Введено некорректное имя">
+            <input required autocomplete="off" type="text" name="weight" id="t21" class="field__input">
+            <label for="t21" class="field__label">Ваше имя</label>
+          </div>
+          <div class="request__field field" data-message="Введен некорректный номер">
+            <input autocomplete="off" type="text" inputmode="tel" name="weight" id="t41" class="field__input field__input--phone">
+            <label for="t41" class="field__label">Ваш телефон</label>
+          </div>
+        </div>
+        <button type="submit" class="request__button button">Оствить заявку на получение отзывов</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <section class="consultation">
+  <div class="consultation__manager">
+    <img src="img/manager.png" alt="" class="consultation__img">
+    <div class="consultation__place">
+      <p class="consultation__name">Абрамова Виктория</p>
+      <p class="consultation__position">Менеджер по работе с клиентами</p>
+    </div>
+  </div>
+  <div class="consultation__content">
+    <form data-controller="send-form" data-action="submit->send-form#send" action="post" class="consultation__form">
+      <h2 class="consultation__title">Бесплатная <span>консультация по таможне</span></h2>
+
+      <div class="consultation__field field" data-message="Введен некорректный номер">
+        <textarea placeholder="Например, мне нужно перевести экскаватор из Италии в Москву,вы сможете загрузить его?" autocomplete="off" type="text" inputmode="tel" name="weight" id="t411" class="field__input field__input--textarea"></textarea>
+        <label for="t411" class="field__label visually-hidden">Вопрос</label>
+      </div>
+      <button type="submit" class="consultation__button button">Отправить вопрос менеджеру</button>
+    </form>
+    <p class="consultation__info">А если вопрос нету, предалагам, начать с <a href="#">расчета стоимости</a></p>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="footer__video">
+    <video class="lazy" src="img/footer-video.mp4" loop autoplay muted lazy></video>
+  </div>
+  <div class="footer__content">
+    <p class="footer__title">Решим любую задачу с любовью к вам и вашему грузу</p>
+    <p class="footer__description"><b>Свяжитесь с нами любым удобным способом,</b> мы бесплатно проконсультируем вас и поможем решить задачу, даже если вы не будете заказывать у нас</p>
+    <div class="footer__tabs tabs" data-tabs>
+      <ul class="tabs__list">
+        <li class="tabs__item tabs__item--active" data-tab="1">Офис в Москве</li>
+        <li class="tabs__item" data-tab="2">Офис в Питере</li>
+        <li class="tabs__item" data-tab="3">Офис в США</li>
+      </ul>
+      <div class="footer__inner">
+        <div class="tabs__content tabs__content--active" data-content="1">
+          <div class="footer__row">
+            <div class="footer__phone">
+              <a href="">+7 (800) <b>360-45-77</b></a>
+              <span>Перезвоним за 8 сек.</span>
+            </div>
+            <ul class="footer__social social">
+              <li class="social__item"><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+              <li class="social__item"><a href="#"><img src="img/viber-2.svg" alt=""></a></li>
+              <li class="social__item"><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+            </ul>
+            <a href="" class="footer__email">hi@accom.com</a>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__col">
+              <p class="footer__header">Адрес офиса: </p>
+              <p class="footer__text">Москва, Башни Федерации, 45 этаж, 8 офис</p>
+            </div>
+            <div class="footer__col">
+              <p class="footer__text">Время работы офиса: 09:00 - 19:00</p>
+              <p class="footer__text">Время работы над проектами: 24/7</p>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="2">
+          <div class="footer__row">
+            <div class="footer__phone">
+              <a href="">+7 (800) <b>360-45-77</b></a>
+              <span>Перезвоним за 8 сек.</span>
+            </div>
+            <ul class="footer__social social">
+              <li class="social__item"><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+              <li class="social__item"><a href="#"><img src="img/viber-2.svg" alt=""></a></li>
+              <li class="social__item"><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+            </ul>
+            <a href="" class="footer__email">hi@accom.com</a>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__col">
+              <p class="footer__header">Адрес офиса: </p>
+              <p class="footer__text">Питере, Башни Федерации, 45 этаж, 8 офис</p>
+            </div>
+            <div class="footer__col">
+              <p class="footer__text">Время работы офиса: 09:00 - 19:00</p>
+              <p class="footer__text">Время работы над проектами: 24/7</p>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="3">
+          <div class="footer__row">
+            <div class="footer__phone">
+              <a href="">+7 (800) <b>360-45-77</b></a>
+              <span>Перезвоним за 8 сек.</span>
+            </div>
+            <ul class="footer__social social">
+              <li class="social__item"><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+              <li class="social__item"><a href="#"><img src="img/viber-2.svg" alt=""></a></li>
+              <li class="social__item"><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+            </ul>
+            <a href="" class="footer__email">hi@accom.com</a>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__col">
+              <p class="footer__header">Адрес офиса: </p>
+              <p class="footer__text">США, Башни Федерации, 45 этаж, 8 офис</p>
+            </div>
+            <div class="footer__col">
+              <p class="footer__text">Время работы офиса: 09:00 - 19:00</p>
+              <p class="footer__text">Время работы над проектами: 24/7</p>
+            </div>
+          </div>
+        </div>
+        <a href="" class="footer__button button">Рассчитать стоимость</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <img src="img/logo.svg" alt="" class="footer__logo">
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#">Реквизиты</a></li>
+      <li class="footer__item"><a href="#">Политика конфиденциальности</a></li>
+      <li class="footer__item"><a href="#">Перевозчикамм</a></li>
+      <li class="footer__item"><a href="#">Создание и продвижение сайтов</a></li>
+    </ul>
+    <ul class="footer__social social">
+      <li class="social__item"><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+      <li class="social__item"><a href="#"><img src="img/viber-2.svg" alt=""></a></li>
+      <li class="social__item"><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__body popup__body--callback">
+      <button class="popup__close" aria-label="close">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="popup__title">Оставьте заявку </p>
+      <form data-controller="send-form" data-action="submit->send-form#send" action="post" class="popup__form">
+        <div class="popup__group">
+        <div class="popup__field field field--light" data-message="Введено некорректное имя">
+          <input required autocomplete="off" type="text" name="weight" id="t2" class="field__input">
+          <label for="t2" class="field__label">Ваше имя</label>
+        </div>
+        <div class="popup__field field field--light" data-message="Введен некорректный номер">
+          <input autocomplete="off" type="text" inputmode="tel" name="weight" id="t4" class="field__input field__input--phone">
+          <label for="t4" class="field__label">Ваш телефон</label>
+        </div>
+        <div class="popup__field field field--light" data-message="Введена некорректная почта">
+          <input autocomplete="off" inputmode="email" type="text" name="weight" id="t5" class="field__input">
+          <label for="t5" class="field__label">Ваша почта</label>
+        </div>
+        </div>
+        <button type="submit" class="popup__button button">Оставить заявку</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor.js"></script>
+<script src="js/general.js"></script>
+</body>
+</html>

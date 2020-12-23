@@ -1,0 +1,20 @@
+<svg width="300" height="140" viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2">
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 298.268 96.1749)" fill="white"/>
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 284.174 110.268)" fill="white"/>
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 298.268 110.268)" fill="white"/>
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 284.174 124.361)" fill="white"/>
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 298.268 124.361)" fill="white"/>
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 284.174 138.454)" fill="white"/>
+<circle r="1.17442" transform="matrix(1.19249e-08 1 1 -1.19249e-08 298.268 138.454)" fill="white"/>
+</g>
+<g opacity="0.2">
+<ellipse cx="44.3607" cy="1.69263" rx="1.17442" ry="1.24048" transform="rotate(180 44.3607 1.69263)" fill="white"/>
+<ellipse cx="30.2675" cy="16.5815" rx="1.17442" ry="1.24072" transform="rotate(180 30.2675 16.5815)" fill="white"/>
+<ellipse cx="30.2675" cy="1.69263" rx="1.17442" ry="1.24048" transform="rotate(180 30.2675 1.69263)" fill="white"/>
+<ellipse cx="16.1747" cy="16.5815" rx="1.17442" ry="1.24072" transform="rotate(180 16.1747 16.5815)" fill="white"/>
+<ellipse cx="16.1747" cy="1.69263" rx="1.17442" ry="1.24048" transform="rotate(180 16.1747 1.69263)" fill="white"/>
+<ellipse cx="2.08144" cy="16.5815" rx="1.17442" ry="1.24072" transform="rotate(180 2.08144 16.5815)" fill="white"/>
+<ellipse cx="2.08145" cy="1.69263" rx="1.17441" ry="1.24048" transform="rotate(180 2.08145 1.69263)" fill="white"/>
+</g>
+</svg>
