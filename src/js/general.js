@@ -129,6 +129,15 @@ if(infinity) {
 // })
 
 
+const stepsButton = document.querySelector(`.how-order__button`);
+const stepsList = document.querySelector(`.steps`);
+
+stepsButton.addEventListener(`click`, () => {
+  stepsList.classList.remove(`steps--hidden`);
+  stepsButton.style.display = `none`;
+})
+
+
 function getCoords(elem) { // кроме IE8-
   const box = elem.getBoundingClientRect();
 

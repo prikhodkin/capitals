@@ -1,4 +1,10 @@
 .hero {
+  .tabs__content {
+    &--active {
+      position: static;
+    }
+  }
+
   &--light {
     .hero__tabs {
       background: #f6f6f6;
