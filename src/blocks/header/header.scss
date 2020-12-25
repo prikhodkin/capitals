@@ -6,6 +6,35 @@
   align-items: center;
   width: 100%;
   padding: 20px;
+
+  &--light {
+    .header__phone {
+      color: #000000;
+
+      svg {
+        fill: $c-accent;
+      }
+    }
+
+    .header__time {
+      color: #000000;
+    }
+
+    .header__language {
+      color: #000000;
+      background: #e1e1e1;
+
+      &::before {
+        background-image: url("../../img/dropdown@dark.svg");
+      }
+    }
+
+    .menu__burger {
+      svg {
+        fill: $c-accent;
+      }
+    }
+  }
 }
 
 .header__right {
@@ -16,6 +45,11 @@
   img {
     width: 125px;
     height: auto;
+  }
+
+  &--opened {
+    position: relative;
+    z-index: 102;
   }
 }
 
@@ -65,6 +99,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 90;
 
     img {
       width: 159px;

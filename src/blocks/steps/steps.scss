@@ -1,0 +1,147 @@
+.steps {
+  @include list-reset;
+
+
+  &--hidden {
+    position: relative;
+    max-height: 1100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      z-index: 20;
+      width: 100%;
+      padding-bottom: 100%;
+      background: #ffffff;
+      border-radius: 50%;
+      filter: blur(200px);
+    }
+  }
+}
+
+.steps__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  span {
+    font-weight: 500;
+    color: $c-accent;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  a {
+    color: #026dcf;
+    text-decoration: underline;
+  }
+
+  p + p {
+    margin-top: 15px;
+  }
+}
+
+.steps__info {
+  margin: 20px 0;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.steps__header {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 13px;
+  letter-spacing: -0.01em;
+}
+
+.steps__item {
+  position: relative;
+  padding-left: 18px;
+
+  img {
+    margin-bottom: 45px;
+  }
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background-color: $c-accent;
+    border-radius: 50%;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 40px;
+
+    &::after {
+      @include pseudo;
+      position: absolute;
+      top: 0;
+      left: 5px;
+      width: 1px;
+      height: 100%;
+      border-left: 1px dashed $c-accent;
+    }
+  }
+}
+
+.steps__example {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+@media (min-width: 1200px) {
+  .steps {
+    &--hidden {
+      &::before {
+        bottom: -400px;
+      }
+    }
+  }
+
+  .steps__item {
+    padding-left: 51px;
+
+    &:not(:last-child) {
+      padding-bottom: 125px;
+
+      &::after {
+        left: 12px;
+      }
+    }
+
+
+    &::before {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .steps__text {
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    letter-spacing: -0.01em;
+  }
+
+  .steps__info {
+    margin-top: 28px;
+    margin-bottom: 55px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

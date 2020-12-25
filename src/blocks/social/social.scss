@@ -1,0 +1,45 @@
+.social {
+  @include list-reset;
+  display: flex;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background-color: rgba(#ffffff, 0.4);
+    border-radius: 50%;
+  }
+
+
+  img {
+    width: 11px;
+    height: 11px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .social__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    a {
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}

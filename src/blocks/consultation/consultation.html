@@ -1,0 +1,21 @@
+<section class="consultation">
+  <div class="consultation__manager">
+    <img src="../img/manager.png" alt="" class="consultation__img">
+    <div class="consultation__place">
+      <p class="consultation__name">Абрамова Виктория</p>
+      <p class="consultation__position">Менеджер по работе с клиентами</p>
+    </div>
+  </div>
+  <div class="consultation__content">
+    <form data-controller="send-form" data-action="submit->send-form#send" action="post" class="consultation__form">
+      <h2 class="consultation__title">Бесплатная <span>консультация по таможне</span></h2>
+
+      <div class="consultation__field field" data-message="Введен некорректный номер">
+        <textarea placeholder="Например, мне нужно перевести экскаватор из Италии в Москву,вы сможете загрузить его?" autocomplete="off" type="text" inputmode="tel" name="weight" id="t411" class="field__input field__input--textarea"></textarea>
+        <label for="t411" class="field__label visually-hidden">Вопрос</label>
+      </div>
+      <button type="submit" class="consultation__button button">Отправить вопрос менеджеру</button>
+    </form>
+    <p class="consultation__info">А если вопрос нету, предалагам, начать с <a href="#">расчета стоимости</a></p>
+  </div>
+</section>

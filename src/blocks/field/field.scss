@@ -55,6 +55,11 @@
   transition: all 0.3s;
   resize: none;
 
+  &--textarea {
+    height: auto;
+    min-height: 108px;
+  }
+
   &:focus {
     border-color: #ef4932;
 

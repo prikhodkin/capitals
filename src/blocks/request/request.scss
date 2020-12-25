@@ -1,0 +1,134 @@
+.request {
+  overflow: hidden;
+}
+
+.request__inner {
+  position: relative;
+  margin-top: 10px;
+  padding: 245px 20px 45px 20px;
+  background-color: #2e3758;
+}
+
+.request__title {
+  max-width: 235px;
+  margin-bottom: 11px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.request__description {
+  margin-bottom: 40px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.request__field {
+  margin-bottom: 30px;
+}
+
+
+.request__img {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  width: 470px;
+  transform: translateX(-200px);
+}
+
+@media (min-width: 768px) {
+  .request__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .request__title {
+    max-width: unset;
+    margin-bottom: 17px;
+  }
+
+  .request__img {
+    top: 0;
+    right: -210px;
+    left: unset;
+    width: 700px;
+    transform: unset;
+  }
+
+  .request__content {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .request__inner {
+    @include page-wrapper;
+    margin-top: 37px;
+    background-image: url("../../img/request-dots.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 23px;
+  }
+
+  .request__content {
+    max-width: unset;
+  }
+
+  .request__button {
+    max-width: 400px;
+  }
+
+  .request__title {
+    max-width: 625px;
+    font-size: 30px;
+    line-height: 37px;
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .request__description {
+    max-width: 565px;
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+
+  .request__field {
+    margin-bottom: 0;
+  }
+
+  .request__img {
+    top: -143px;
+    right: -240px;
+    width: 915px;
+  }
+
+  .request__form {
+    max-width: 615px;
+  }
+
+  .request__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .request__img {
+    right: -100px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .request__img {
+    right: 0;
+  }
+}

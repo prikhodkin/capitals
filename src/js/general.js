@@ -4,8 +4,8 @@ import IMask from 'imask';
 import {debounce} from "./util";
 import Tabs from "%modules%/tabs/tabs";
 import Typewriter from 'typewriter-effect/dist/core';
-import formm from './util/test.js';
-formmm()
+import SendForm from './util/send-form';
+// formmm()
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
 const WORD_DELAY = 50;
@@ -132,6 +132,18 @@ if(infinity) {
 // })
 
 
+const stepsButton = document.querySelector(`.how-order__button`);
+const stepsList = document.querySelector(`.steps`);
+
+if(stepsList) {
+
+stepsButton.addEventListener(`click`, () => {
+  stepsList.classList.remove(`steps--hidden`);
+  stepsButton.style.display = `none`;
+})
+
+}
+
 function getCoords(elem) { // кроме IE8-
   const box = elem.getBoundingClientRect();
 
@@ -144,6 +156,7 @@ function getCoords(elem) { // кроме IE8-
 
 const about = document.querySelector(`.about`);
 const cta = document.querySelector(`.cta`);
+const consultation = document.querySelector(`.consultation`);
 const chatMessages = document.querySelectorAll(`.chat__item`);
 let isChatAnimate = true;
 
@@ -156,6 +169,10 @@ window.addEventListener(`scroll`, () => {
 
   if(window.pageYOffset >= (getCoords(cta).top - 150)) {
     cta.classList.add(`cta--active`);
+  }
+
+  if(window.pageYOffset >= (getCoords(consultation).top - 150)) {
+    consultation.classList.add(`consultation--active`);
   }
 })
 
@@ -216,3 +233,41 @@ const getTimeArray = () => {
   })
   return timer;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(video) {
+        if (video.isIntersecting) {
+          for (var source in video.target.children) {
+            var videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  }
+});
+
+const form = document.querySelector('.popup__form');
+const offersForm = document.querySelector('.offers__form');
+
+form.addEventListener('submit', function(evt) {
+  new SendForm(evt);
+});
+
+offersForm.addEventListener('submit', function(evt) {
+  new SendForm(evt);
+});

@@ -1,0 +1,152 @@
+.consultation {
+  padding: 30px 20px 40px 20px;
+  overflow: hidden;
+
+  &--active {
+    .consultation__place {
+      transform: translateX(0);
+    }
+  }
+}
+
+.consultation__img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.consultation__field {
+  margin-bottom: 30px;
+}
+
+.consultation__title {
+  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+
+  span {
+    display: block;
+    font-weight: 400;
+  }
+}
+
+.consultation__form {
+  position: relative;
+  margin-bottom: 21px;
+  padding: 20px 15px 30px 15px;
+  background-color: #2e3758;
+  box-shadow: 6px 6px 0 rgba(#2e3758, 0.2);
+}
+
+.consultation__info {
+  max-width: 190px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #a0a0a0;
+
+  a {
+    color: $c-accent;
+    text-decoration: underline;
+  }
+}
+
+.consultation__place {
+  position: absolute;
+  right: 10px;
+  bottom: 55px;
+  max-width: 157px;
+  padding: 10px 14px;
+  background-color: $c-main;
+  transform: translateY(200%);
+  transition: all 1s;
+}
+
+.consultation__manager {
+  position: relative;
+}
+
+.consultation__name {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.consultation__position {
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+  .consultation {
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: content-box;
+    max-width: 1006px;
+    margin: 0 auto;
+    padding-top: 61px;
+    padding-bottom: 0;
+  }
+
+  .consultation__img {
+    width: 367px;
+  }
+
+  .consultation__place {
+    bottom: 351px;
+    max-width: 216px;
+    padding: 16px;
+    transform: translateY(500px);
+  }
+
+  .consultation__content {
+    align-self: center;
+    margin-right: auto;
+  }
+
+  .consultation__name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .consultation__position {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .consultation__place {
+    right: -20px;
+  }
+
+  .consultation__form {
+    margin-bottom: 40px;
+    padding: 55px 60px;
+  }
+
+  .consultation__title {
+    margin-bottom: 57px;
+    font-size: 25px;
+    line-height: 110.81%;
+  }
+
+  .consultation__field {
+    .field__input {
+      &--textarea {
+        min-height: 125px;
+        padding: 20px 25px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}

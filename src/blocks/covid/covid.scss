@@ -1,0 +1,45 @@
+.covid {
+  margin: 20px;
+  background-color: #F4F7FF;
+}
+
+.covid__title {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.covid__description {
+  padding: 0 20px 20px 20px;
+  margin: 0;
+}
+
+.covid__img {
+  min-height: 200px;
+  background: no-repeat center url("../img/covid.png");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .covid__img {
+    min-height: 340px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .covid {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .covid__wrapper {
+    padding: 20px;
+    width: 730px;
+  }
+
+  .covid__img {
+    width: 430px;
+    min-height: 210px;
+  }
+}

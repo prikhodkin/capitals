@@ -1,0 +1,27 @@
+.page-title {
+  min-height: 170px;
+  position: relative;
+  background: no-repeat center url("../img/delivery__background.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title__title {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 585px);
+    min-height: 300px;
+  }
+
+  .page-title__title {
+    font-size: 45px;
+  }
+}
