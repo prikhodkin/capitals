@@ -4,8 +4,11 @@ import IMask from 'imask';
 import {debounce} from "./util";
 import Tabs from "%modules%/tabs/tabs";
 import Typewriter from 'typewriter-effect/dist/core';
+import SendForm from './util/send-form';
+// formmm()
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
+const WORD_DELAY = 50;
 
 const infinity = document.querySelector('.promo__accent b');
 const inputs = document.querySelectorAll('.field__input');
@@ -132,11 +135,14 @@ if(infinity) {
 const stepsButton = document.querySelector(`.how-order__button`);
 const stepsList = document.querySelector(`.steps`);
 
+if(stepsList) {
+
 stepsButton.addEventListener(`click`, () => {
   stepsList.classList.remove(`steps--hidden`);
   stepsButton.style.display = `none`;
 })
 
+}
 
 function getCoords(elem) { // кроме IE8-
   const box = elem.getBoundingClientRect();
@@ -171,29 +177,61 @@ window.addEventListener(`scroll`, () => {
 })
 
 function animateChat() {
+  // Массив временных промежутков, за каждый из которых текст полностью печатается в определенном блоке
+  const timerArray = getTimeArray();
+
+  // Объявляем переменную задержки времени между блоками
+  let time;
+
   chatMessages.forEach((item,index) => {
     const text = item.querySelector(`.chat__text`);
-    const time = text.getAttribute(`data-time`);
+    // const time = text.getAttribute(`data-time`);
 
+    // Переопределяем задержку времени для кажого блока в зависимости от итерации
+    timerArray[index] == 0 ? time = 0 : time = time + timerArray[index] + 1100;
+
+    // Отрисовываем текст
     setTimeout(() => {
+      // Отображаем блок
       item.classList.add(`chat__item--active`);
+
       setTimeout(() => {
-        addWriteText(text);
+        writeText(text)
       }, 300)
-    }, index * time)
+    }, time)
   });
   isChatAnimate = false;
 }
 
-function addWriteText(target) {
-  const word = target.getAttribute(`data-word`);
-  const writer = new Typewriter(target, {
-    strings: word,
-    autoStart: true,
-    loop: false,
-    delay: 50,
-    cursor: '',
+/**
+ * Автоматический набор текста
+  txt : блок с текстом
+  word : текст из дата атрибута
+  wordArray : разбивает строку текста на отдельные буквы и записывает в массив
+ *
+ */
+const writeText = (txt) => {
+  const word = txt.getAttribute(`data-word`);
+  const wordArray = word.split('')
+
+  for (let i = 0; i < wordArray.length; i++) {
+    setTimeout(()=>{
+      txt.innerHTML = txt.innerHTML + wordArray[i];
+    }, WORD_DELAY * i)
+  }
+}
+
+// Получает массив задержек, за сколько отрисовывается КАЖДЫЙ текст в блоке по отдельности, задержку от нулевого индекса приравниваем к 0
+const getTimeArray = () => {
+  const timer = [0];
+
+  chatMessages.forEach((item) => {
+    // Находит длину каждого текста и умножает на задержку между буквами
+    const time = item.querySelector(`.chat__text`).getAttribute(`data-word`).length * WORD_DELAY;
+    // Пушит новое значение в массив
+    timer.push(time);
   })
+  return timer;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -222,3 +260,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
+const form = document.querySelector('.popup__form');
+const offersForm = document.querySelector('.offers__form');
+
+form.addEventListener('submit', function(evt) {
+  new SendForm(evt);
+});
+
+if (offersForm) {
+  offersForm.addEventListener('submit', function(evt) {
+    new SendForm(evt);
+  });
+}

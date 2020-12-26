@@ -46,6 +46,11 @@
     width: 125px;
     height: auto;
   }
+
+  &--opened {
+    position: relative;
+    z-index: 102;
+  }
 }
 
 
@@ -94,6 +99,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 90;
 
     img {
       width: 159px;

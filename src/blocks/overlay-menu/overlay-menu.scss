@@ -1,0 +1,20 @@
+.overlay-menu {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.56);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.overlay-body__body {
+  overflow-y: hidden;
+  height: 100vh;
+}

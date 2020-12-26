@@ -1,0 +1,44 @@
+<header class="header header-inside">
+  <a href="#" class="header__logo logo header-inside__logo">
+    <img src="../../img/logo@dark.svg" alt="logo">
+  </a>
+  <nav class="header__menu menu header-inside__menu" data-controller="menu">
+    <button class="menu__burger" data-target="menu.link" data-action="click->menu#toggle">
+      <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1" y1="1" x2="33" y2="1" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="11" x2="19" y2="11" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+        <line x1="25" y1="11" x2="33" y2="11" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+        <line x1="1" y1="21" x2="33" y2="21" stroke="#EF4932" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div class="menu__wrapper">
+      <p class="menu__title">Меню</p>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#">Что мы возим</a></li>
+        <li class="menu__item"><a href="#">Рассчет стоимости</a></li>
+        <li class="menu__item"><a href="#">Наши преимущества</a></li>
+        <li class="menu__item"><a href="#">Как мы работаем</a></li>
+        <li class="menu__item"><a href="#">Доп услуги которые мы оказываем</a></li>
+        <li class="menu__item"><a href="#">Примеры доставки</a></li>
+        <li class="menu__item"><a href="#">Отзывы</a></li>
+        <li class="menu__item"><a href="#">получение консультации</a></li>
+      </ul>
+    </div>
+    @@include('../overlay-menu/overlay-menu.html')
+  </nav>
+  @@include('../menu-inside/menu-inside.html')
+  <div class="header__right header-inside__right">
+    <div class="header__contacts">
+      <a href="#" class="header__phone header-inside__phone">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon-phone"></use>
+        </svg>
+        +7 800 360-45-77
+      </a>
+      <p class="header__time header-inside__time">Пн-Пт с 9:00 до 21:00</p>
+    </div>
+    <ul class="header__language language header-inside__language">
+      <li class="language__item"><a href="">RU</a></li>
+    </ul>
+  </div>
+</header>

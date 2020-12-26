@@ -1,0 +1,131 @@
+.influence {
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.influence__warning {
+  font-weight: 500;
+  text-align: center;
+  color: #EF4932;
+}
+
+.influence__title {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.influence__description {
+  line-height: 16px;
+}
+
+.influence__list {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.influence__item {
+  height: 60px;
+  overflow: hidden;
+  background: no-repeat center url("../img/influence__bground.png");
+  background-size: cover;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 15px;
+
+  &--opened {
+    height: auto;
+  }
+}
+
+.influence__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.influence__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  align-self: center;
+}
+
+.influence__button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: no-repeat center url("../img/arrow__down-red.png");
+  background-color: #fff;
+
+  & span {
+    display: none;
+  }
+
+  &--opened {
+    transform: rotate(180deg);
+  }
+}
+
+.influence__subdescription {
+  font-size: 12px;
+  color: #fff;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .influence {
+    max-width: 1170px;
+    margin: 40px auto;
+    padding: 20px 0;
+  }
+
+  .influence__warning {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .influence__description {
+    width: 930px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .influence__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .influence__item {
+    width: 570px;
+    height: 80px;
+    padding: 40px;
+    padding-top: 21px;
+
+    &--opened {
+      height: auto;
+    }
+  }
+
+  .influence__subtitle{
+    font-size: 23px;
+  }
+
+  .influence__button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .influence__subdescription {
+    font-size: 14px;
+  }
+}

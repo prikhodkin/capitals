@@ -1,0 +1,34 @@
+.header-inside {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .header-inside {
+    position: relative;
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 585px);
+  }
+  .header-inside__menu {
+    display: none;
+  }
+  .header-inside__language {
+    display: none;
+  }
+  .header-inside__phone {
+    color: black;
+
+    & svg {
+      fill: #EF4932;
+    }
+  }
+
+  .header-inside__time {
+    color: black;
+  }
+
+  .header-inside__logo {
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+}

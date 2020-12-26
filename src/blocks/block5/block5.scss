@@ -1,6 +1,7 @@
 .block5 {
   padding: 20px;
   padding-top: 0;
+  margin-top: 20px;
 }
 
 .block5__wrap {
@@ -66,6 +67,7 @@
 
 @media (min-width: 1200px) {
   .block5 {
+    margin-top: 50px;
     display: flex;
     flex-direction: row-reverse;
     padding-right: calc(50% - 495px);
@@ -89,10 +91,14 @@
 
     &:last-of-type {
       position: absolute;
-      right: -308px;
+      right: -190px;
       bottom: 32px;
-      width: 478px;
+      width: 250px;
       height: 318px;
+
+      img {
+        object-fit: cover;
+      }
     }
   }
 

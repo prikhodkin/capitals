@@ -1,0 +1,24 @@
+.abilities-slider__list {
+  list-style: none;
+  padding: 0;
+}
+
+.abilities-slider__item {
+  width: 80%;
+  max-width: 480px;
+}
+
+@media (min-width: 1200px) {
+  .abilities-slider {
+    @include page-wrapper;
+    margin: 40px 0;
+  }
+
+  .abilities-slider__list {
+    display: flex;
+  }
+
+  .abilities-slider__item {
+    width: auto;
+  }
+}
