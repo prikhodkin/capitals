@@ -268,6 +268,8 @@ form.addEventListener('submit', function(evt) {
   new SendForm(evt);
 });
 
-offersForm.addEventListener('submit', function(evt) {
-  new SendForm(evt);
-});
+if (offersForm) {
+  offersForm.addEventListener('submit', function(evt) {
+    new SendForm(evt);
+  });
+}

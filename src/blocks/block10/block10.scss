@@ -1,0 +1,16 @@
+.block10 {
+  padding: 40px 20px;
+}
+
+@media (min-width: 1200px) {
+  .block10 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: calc(50% - 735px);
+    padding-right: calc(50% - 535px);
+  }
+
+  .block10__img {
+    width: 616px;
+  }
+}

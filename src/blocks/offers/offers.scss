@@ -5,20 +5,58 @@
   background-repeat: no-repeat;
   background-position: left 5px bottom 25px;
   background-size: 75px;
+
+  &--inside {
+    background-color: white;
+  }
+
+  &--contacts {
+    background-color: #F4F7FF;
+    padding-top: 250px;
+  }
+
+  &--volume {
+    background-color: white;
+  }
 }
 
 .offers__title {
   margin-bottom: 19px;
   font-weight: 500;
 
+  &--inside {
+    padding: 24px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
   span {
     display: block;
     font-weight: 300;
+  }
+
+  &--contacts {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+
+    span {
+      font-weight: 700;
+    }
   }
 }
 
 .offers__top {
   margin-bottom: 30px;
+
+  &--inside {
+    margin-bottom: 0;
+  }
+}
+
+.offers__wrapper {
+  background-color: #F4F7FF;
 }
 
 .offers__group {
@@ -34,6 +72,21 @@
   padding: 20px 24px 16px 24px;
   background: #3d476a;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+
+  &--inside {
+    background-color: #F4F7FF;
+    box-shadow: unset;
+  }
+
+  &--contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--volume {
+    box-shadow: 10px 10px 0 rgba(#2E3758, 0.2);
+    background: #2E3758;
+  }
 }
 
 .offers__subtitle {
@@ -42,6 +95,12 @@
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+
+  &--contacts {
+    font-size: 12px;
+    line-height: 16px;
+    color: black;
+  }
 }
 
 .offers__receive {
@@ -50,6 +109,11 @@
   padding-bottom: 18px;
   border-top: 1px solid #545c77;
   border-bottom: 1px solid #545c77;
+
+  &--inside {
+    border-top: 1px solid rgba(84, 92, 119, 0.06);
+    border-bottom: 1px solid rgba(84, 92, 119, 0.06);
+  }
 }
 
 .offers__header {
@@ -59,6 +123,10 @@
   line-height: 30px;
   color: #ffffff;
   letter-spacing: -0.01em;
+
+  &--inside {
+    color: black;
+  }
 }
 
 .offers__icon {
@@ -78,10 +146,20 @@
 
 
   color: #ffffff;
+
+  &--inside {
+    color: black;
+  }
 }
 
 .offers__button {
   margin-bottom: 21px;
+
+  &--contacts {
+    min-height: 50px;
+    height: auto;
+    white-space: unset;
+  }
 }
 
 .offers__desc {
@@ -91,11 +169,19 @@
   line-height: 15px;
   text-align: center;
   color: rgba(#ffffff, 0.5);
+
+  &--inside {
+    color: rgba(black, 0.5);
+  }
 }
 
 @media (min-width: 768px) {
   .offers__top {
     margin-bottom: 70px;
+
+    &--inside {
+      margin-bottom: 0;
+    }
   }
 
   .offers__row {
@@ -137,12 +223,31 @@
     padding-top: 70px;
     padding-bottom: 100px;
     background-image: unset;
+
+    &--contacts {
+      width: 630px;
+      padding-top: 50px;
+    }
+
+    &--volume {
+      padding-top: 0px;
+      padding-bottom: 50px;
+    }
   }
 
   .offers__form {
     position: relative;
     z-index: 10;
     padding: 52px 79px 50px 66px;
+
+    &--contacts {
+      padding: 0;
+      padding-top: 20px;
+    }
+
+    &--volume {
+      box-shadow: 20px 20px 0 rgba(#2E3758, 0.2);
+    }
   }
 
   .offers__inner {
@@ -168,11 +273,28 @@
       height: 100%;
       background-color: rgba(#3d476a, 0.4);
     }
+
+    &--inside {
+      &::before {
+        display: none;
+      }
+    }
+
+    &--volume {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .offers__group {
     gap: 35px 70px;
     margin-bottom: 46px;
+
+    &--volume {
+      grid-gap: 35px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
   }
 
   .offers__controls {
@@ -182,20 +304,41 @@
 
   .offers__desc {
     text-align: left;
+
+    &--inside {
+      padding-top: 10px;
+    }
   }
 
   .offers__receive {
     max-width: 482px;
+
+    &--inside {
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
   }
 
   .offers__row {
     justify-content: space-between;
+
+    &--contacts {
+      justify-content: flex-end;
+    }
+
+    &--volume {
+      justify-content: flex-end;
+    }
   }
 
   .offers__button {
     width: 292px;
     margin-right: 31px;
     margin-bottom: 0;
+
+    &--contacts {
+      width: 400px;
+      height: 65px;
+    }
   }
 
   .offers__top {
@@ -206,8 +349,34 @@
   .offers__title {
     margin-bottom: 0;
 
+    &--inside {
+      font-size: 25px;
+      padding-left: 66px;
+    }
+
     span {
       display: inline;
+    }
+
+    &--contacts {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .offers__subtitle {
+    &--contacts {
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      margin-top: 20px;
+      width: 80%;
+    }
+
+    &--volume {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 40px;
     }
   }
 }

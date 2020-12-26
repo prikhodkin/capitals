@@ -1,0 +1,44 @@
+.block2 {
+  width: 175px;
+  height: auto;
+  min-height: 191px;
+  padding: 22px 20px;
+  background-color: #f4f7ff;
+}
+
+.block2__number {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32px;
+  color: $c-accent;
+}
+
+.block2__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  letter-spacing: -0.01em;
+
+  & > span {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block2 {
+    width: 263px;
+    min-height: 281px;
+  }
+
+  .block2__number {
+    font-size: 35px;
+    line-height: 32px;
+  }
+
+  .block2__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

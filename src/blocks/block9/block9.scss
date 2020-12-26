@@ -1,0 +1,17 @@
+.block9 {
+  padding: 40px 20px;
+}
+
+@media (min-width: 1200px) {
+  .block9 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 685px);
+  }
+
+  .block9__img {
+    width: 616px;
+  }
+}

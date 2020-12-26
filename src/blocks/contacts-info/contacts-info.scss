@@ -1,0 +1,34 @@
+.contacts-info {
+  margin-top: 60px;
+  background-color: #F4F7FF;
+}
+
+.contacts-info__inner {
+  position: relative;
+}
+
+.contacts-info__img {
+  width: 400px;
+  height: 400px;
+  background: no-repeat center url("../img/reviews__form.png");
+  background-size: cover;
+  position: absolute;
+  top: -45px;
+  z-index: 1;
+  left: calc(50% - 160px);
+}
+
+@media (min-width: 1200px) {
+  .contacts-info__inner {
+    @include page-wrapper;
+  }
+
+  .contacts-info__img {
+    width: 750px;
+    height: 750px;
+    background-size: cover;
+    left: auto;
+    right: calc(50% - 800px);
+    top: -70px;
+  }
+}
