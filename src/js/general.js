@@ -4,7 +4,7 @@ import IMask from 'imask';
 import {debounce} from "./util";
 import Tabs from "%modules%/tabs/tabs";
 import Typewriter from 'typewriter-effect/dist/core';
-import SendForm from './util/send-form';
+import {send} from './util/send-form';
 // formmm()
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
@@ -265,12 +265,12 @@ const form = document.querySelector('.popup__form');
 const offersForm = document.querySelector('.offers__form');
 
 form.addEventListener('submit', function(evt) {
-  new SendForm(evt);
+  send(evt);
 });
 
 if (offersForm) {
   offersForm.addEventListener('submit', function(evt) {
-    new SendForm(evt);
+    send(evt);
   });
 }
 
