@@ -6,6 +6,9 @@
   @@include('../blocks/favicon/favicon.html')
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
   <link rel="stylesheet" href="css/main.css">
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTgHkr6LmKF5Mp_HqclpBXRXeNYfh9bXY&callback=initMap">
+  </script>
 </head>
 <body>
 @@include('../blocks/header-inside/header-inside.html')
@@ -18,7 +21,7 @@
   @@include('../blocks/contacts/contacts.html')
 
   <div class="map-frame" id="map">
-    <img src="../img/frame__map.png" alt="">
+    <img class="map-frame__image" src="../img/frame__map.png" alt="">
   </div>
 
   @@include('../blocks/consultation/consultation.html')
@@ -27,5 +30,18 @@
 @@include('../blocks/popup/popup.html')
 <script src="js/vendor.js"></script>
 <script src="js/general.js"></script>
+<script type="text/javascript">
+  function initMap() {
+    const myLatLng = { lat: 55.7515219389201, lng: 37.53965301710458 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: myLatLng,
+      zoom: 10,
+    });
+    new google.maps.Marker({
+      position: myLatLng,
+      map
+    });
+  }
+</script>
 </body>
 </html>
