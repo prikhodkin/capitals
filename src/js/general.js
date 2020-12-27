@@ -264,6 +264,9 @@ document.addEventListener("DOMContentLoaded", function() {
 const form = document.querySelector('.popup__form');
 const offersForm = document.querySelector('.offers__form');
 
+const forms = document.querySelectorAll(`form`);
+console.log(forms)
+
 // ТЕСТ ФОРМ ******************************************************
 
 const ajaxSend = (url, method, data) => {
@@ -349,14 +352,19 @@ const send = (evt) => {
   }
 }
 
-form.addEventListener('submit', function(evt) {
-  send(evt);
-});
+// form.addEventListener('submit', function(evt) {
+//   send(evt);
+// });
 
-if (offersForm) {
-  offersForm.addEventListener('submit', function(evt) {
+// if (offersForm) {
+//   offersForm.addEventListener('submit', function(evt) {
+//     send(evt);
+//   });
+// }
+
+forms.forEach(it => {
+  it.addEventListener('submit', function(evt) {
     send(evt);
   });
-}
-
+})
 // ******************************************************************
