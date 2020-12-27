@@ -24,10 +24,20 @@
     background-color: rgba(255,255,255,0.4);
   }
 
+  // &--current {
+  //   color: white;
+
+  //   &::after {
+  //     display: none;
+  //   }
+  // }
+}
+
+.breadcrumbs__item {
   &--current {
     color: white;
 
-    &::after {
+    a::after {
       display: none;
     }
   }
