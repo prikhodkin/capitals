@@ -1,12 +1,12 @@
-.block7 {
+.block2-about-company {
   padding: 20px;
 }
 
-.block7__wrap {
+.block2-about-company__wrap {
   margin-bottom: 19px;
 }
 
-.block7__text {
+.block2-about-company__text {
   font-size: 12px;
   line-height: 16px;
 
@@ -16,7 +16,7 @@
 }
 
 @media (min-width: 1200px) {
-  .block7 {
+  .block2-about-company {
     margin-top: 50px;
     padding-right: calc(50% - 525px);
     padding-left: calc(50% - 665px);
@@ -24,22 +24,22 @@
     justify-content: space-between;
   }
 
-  .block7__inner {
+  .block2-about-company__inner {
     width: 580px;
     height: 330px;
   }
 
-  .block7__box {
+  .block2-about-company__box {
     width: 535px;
     align-self: center;
   }
 
-  .block7__img {
+  .block2-about-company__img {
     height: 100%;
     object-fit: cover;
   }
 
-  .block7__text {
+  .block2-about-company__text {
     font-size: 16px;
     line-height: 25px;
     letter-spacing: -0.01em;

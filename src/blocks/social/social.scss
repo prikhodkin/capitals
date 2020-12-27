@@ -24,6 +24,12 @@
     height: 11px;
     object-fit: contain;
   }
+
+  &--inside {
+    a {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
 }
 
 @media (min-width: 768px) {

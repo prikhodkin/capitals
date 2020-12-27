@@ -273,3 +273,4 @@ if (offersForm) {
     new SendForm(evt);
   });
 }
+
