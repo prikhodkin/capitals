@@ -43,7 +43,7 @@ module.exports = {
     dest: "./dist/img/"
   },
   deploy: {
-    dest: "../www/",
+    dest: "../capitals-wordpress/web/app/themes/Capitals/resources/assets",
     src: "./dist/**"
   },
   vendor: {
