@@ -82,6 +82,12 @@
 .about__chat {
   max-width: 300px;
   margin: 0 auto;
+
+  &--consultation {
+    position: absolute;
+    top: -150px;
+    right: 20px;
+  }
 }
 
 .about__img {
@@ -147,6 +153,16 @@
       width: calc(100% + 180px);
       height: 100%;
       background: linear-gradient(274.02deg, #ffffff 10.57%, #ffffff 63.33%, rgba(255, 255, 255, 0) 96.29%);
+    }
+
+    &--consultation {
+      z-index: 0;
+      right: -150px;
+      top: -90px;
+
+      &::before {
+        background: none;
+      }
     }
   }
 

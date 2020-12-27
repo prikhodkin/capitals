@@ -1,0 +1,24 @@
+.free-consultation {
+  background: #F4F7FF;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 150px;
+}
+
+.free-consultation__chat {
+  position: relative;
+  height: 200px;
+  overflow: visible;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .free-consultation {
+    flex-direction: row;
+  }
+
+  .free-consultation__chat {
+    width: 500px;
+    height: 500px;
+  }
+}

@@ -15,8 +15,47 @@
     @@include('../blocks/breadcrumbs/breadcrumbs.html')
   </section>
 
-  @@include('../blocks/block9/block9.html')
-  @@include('../blocks/block10/block10.html')
+  @@include('../blocks/block1-buyout/block1-buyout.html')
+  @@include('../blocks/block2-buyout/block2-buyout.html')
+
+  <section class="free-consultation">
+    @@include('../blocks/offers-consultation/offers-consultation.html')
+    <div class="free-consultation__chat about">
+      <div class="about__chat about__chat--consultation chat chat--active">
+        <ul class="chat__list">
+          <li class="chat__item">
+            <div class="chat__top">
+              <span class="chat__name">Capitals Logistics</span>
+              <span class="chat__time">16:24</span>
+            </div>
+            <div class="chat__text" data-time="2500" data-word="Виктор, Ваш груз уже на гарнице"></div>
+          </li>
+          <li class="chat__item">
+            <div class="chat__top">
+              <span class="chat__name">Виктор</span>
+              <span  class="chat__time">16:31</span>
+            </div>
+            <div data-word="Ок!" data-time="3000" class="chat__text"></div>
+          </li>
+          <li class="chat__item">
+            <div class="chat__top">
+              <span class="chat__name">Capitals Logistics</span>
+              <span class="chat__time">20:04</span>
+            </div>
+            <div data-time="2000" data-word="Виктор, Ваш груз прошёл границу раньше, через час ожидайте на складе" class="chat__text"></div>
+          </li>
+          <li class="chat__item">
+            <div class="chat__top">
+              <span class="chat__name">Виктор</span>
+              <span class="chat__time">20:15</span>
+            </div>
+            <div data-time="3000" data-word="Отлично, ждём" class="chat__text"></div>
+          </li>
+        </ul>
+        <img src="../img/chat.png" alt="" class="about__img">
+      </div>
+    </div>
+  </section>
 </main>
 @@include('../blocks/footer/footer.html')
 @@include('../blocks/popup/popup.html')
