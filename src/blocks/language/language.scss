@@ -12,11 +12,16 @@
   &::before {
     @include pseudo;
     position: absolute;
-    top: 50%;
+    top: 13px;
     right: 5px;
     width: 8px;
     height: 5px;
     background-image: url("../../img/dropdown.svg");
     transform: translateY(-50%);
+    transition: 0.3s;
   }
+}
+
+.language__item {
+  text-transform: uppercase;
 }

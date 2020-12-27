@@ -62,6 +62,11 @@
   .header__contacts {
     display: block;
     margin-right: 36px;
+    padding-right: 50px;
+
+    &--inside {
+      padding-right: 0;
+    }
   }
 
   .header__menu {
@@ -71,10 +76,26 @@
   .header__right {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .header__language {
     display: block;
+    height: 25px;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &:hover {
+      height: 100%;
+
+      &::before {
+        top: 11px;
+        transform: rotate(180deg);
+      }
+    }
   }
 
   .header__phone {
