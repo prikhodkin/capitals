@@ -10,6 +10,21 @@
 
   &--img {
     min-height: 260px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+  }
+}
+
+.page-info__technic {
+  width: 605px;
+  position: absolute;
+  z-index: 1;
+
+  &--container {
+    width: 305px;
+    bottom: 45px;
   }
 }
 
@@ -43,6 +58,122 @@
   top: 50px;
 }
 
+.page-info__cloud-wrapper {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 60px;
+  top: 55px;
+  z-index: 2;
+}
+.page-info__cloud {
+  position: absolute;
+
+  &--left {
+    width: 116px;
+    left: -75px;
+    top: -10px;
+  }
+
+  &--top {
+    width: 235px;
+    right: -140px;
+    top: -120px;
+  }
+
+  &--bottom {
+    width: 300px;
+    right: -180px;
+    top: -20px;
+  }
+}
+
+.page-info__number {
+  position: absolute;
+  height: 130px;
+  width: auto;
+  bottom: 30px;
+
+  &--second {
+    left: 70px;
+    z-index: 2;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+    p {
+      font-size: 18px;
+      color: rgba(white, 0.5);
+      position: absolute;
+      right: 10px;
+      bottom: -15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .page-info__item {
+
+    &--img {
+      min-height: 340px;
+      max-width: 380px;
+    }
+  }
+
+  .page-info__logo {
+    width: 200px;
+    right: calc(50% - 120px);
+  }
+
+  .page-info__technic {
+    bottom: 0;
+    width: 750px;
+
+    &--container {
+      width: 390px;
+      bottom: 50px;
+    }
+  }
+
+  .page-info__cloud-wrapper {
+    right: 90px;
+    top: 90px;
+  }
+
+  .page-info__cloud {
+    &--left {
+      width: 165px;
+      left: -125px;
+      top: -40px;
+    }
+
+    &--top {
+      width: 280px;
+      right: -180px;
+      top: -165px;
+    }
+
+    &--bottom {
+      width: 400px;
+      right: -270px;
+      top: -60px;
+    }
+  }
+
+  .page-info__number {
+    height: 160px;
+
+    &--second {
+      left: 80px;
+
+      p {
+        right: 20px;
+      }
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .page-info {
     display: flex;
@@ -61,10 +192,21 @@
 
     &--img {
       min-height: 410px;
+      max-width: none;
     }
 
     &:nth-child(3) {
       margin-left: 50px;
+    }
+  }
+
+  .page-info__technic {
+    width: 970px;
+    bottom: -20px;
+
+    &--container {
+      width: 466px;
+      bottom: 55px;
     }
   }
 
@@ -76,5 +218,48 @@
   .page-info__description {
     font-size: 16px;
     font-weight: 400;
+  }
+
+  .page-info__logo {
+    width: 237px;
+    right: calc(50% - 135px);
+    top: 60px;
+  }
+
+  .page-info__cloud-wrapper {
+    right: 130px;
+    top: 130px;
+  }
+
+  .page-info__cloud {
+    &--left {
+      width: 210px;
+      left: -160px;
+      top: -80px;
+    }
+
+    &--top {
+      width: 320px;
+      right: -230px;
+      top: -210px;
+    }
+
+    &--bottom {
+      width: 440px;
+      right: -310px;
+      top: -65px;
+    }
+  }
+
+  .page-info__number {
+    height: 200px;
+
+    &--second {
+      left: 110px;
+
+      p {
+        right: 40px;
+      }
+    }
   }
 }

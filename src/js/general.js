@@ -161,18 +161,24 @@ const chatMessages = document.querySelectorAll(`.chat__item`);
 let isChatAnimate = true;
 
 window.addEventListener(`scroll`, () => {
-  if(window.pageYOffset >= (getCoords(about).top - 150)) {
-    if(isChatAnimate) {
-      animateChat();
+  if(about) {
+    if(window.pageYOffset >= (getCoords(about).top - 150)) {
+      if(isChatAnimate) {
+        animateChat();
+      }
     }
   }
 
-  if(window.pageYOffset >= (getCoords(cta).top - 150)) {
-    cta.classList.add(`cta--active`);
+  if(cta) {
+    if(window.pageYOffset >= (getCoords(cta).top - 150)) {
+      cta.classList.add(`cta--active`);
+    }
   }
 
-  if(window.pageYOffset >= (getCoords(consultation).top - 150)) {
-    consultation.classList.add(`consultation--active`);
+  if(consultation) {
+    if(window.pageYOffset >= (getCoords(consultation).top - 150)) {
+      consultation.classList.add(`consultation--active`);
+    }
   }
 })
 
@@ -261,11 +267,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-const form = document.querySelector('.popup__form');
-const offersForm = document.querySelector('.offers__form');
+// const form = document.querySelector('.popup__form');
+// const offersForm = document.querySelector('.offers__form');
 
 const forms = document.querySelectorAll(`form`);
-console.log(forms)
 
 // ТЕСТ ФОРМ ******************************************************
 
