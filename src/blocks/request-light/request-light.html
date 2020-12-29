@@ -1,0 +1,22 @@
+<section class="request request--light">
+  <div class="request__inner">
+    <img src="../img/request-img.png" alt="" class="request__img">
+    <div class="request__content">
+      <h2 class="request__title"><span>Предоставим контакты клиентов, которые</span> расскажут вам о нашей работе</h2>
+      <p class="request__description">По мелким вопросам мы не беспокоим, а если у вас есть вопрос или нужна помощь, вы можете написать или позвонить вашему персональному менеджеру</p>
+      <form data-controller="send-form" data-action="submit->send-form#send" action="post" class="request__form">
+        <div class="request__fields">
+          <div class="request__field field" data-message="Введено некорректное имя">
+            <input required autocomplete="off" type="text" name="weight" id="t21" class="field__input">
+            <label for="t21" class="field__label">Ваше имя</label>
+          </div>
+          <div class="request__field field" data-message="Введен некорректный номер">
+            <input autocomplete="off" type="text" inputmode="tel" name="weight" id="t41" class="field__input field__input--phone">
+            <label for="t41" class="field__label">Ваш телефон</label>
+          </div>
+        </div>
+        <button type="submit" class="request__button button">Оствить заявку на получение отзывов</button>
+      </form>
+    </div>
+  </div>
+</section>
