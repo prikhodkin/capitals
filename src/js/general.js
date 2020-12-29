@@ -4,6 +4,7 @@ import IMask from 'imask';
 import {debounce} from "./util";
 import Tabs from "%modules%/tabs/tabs";
 import Typewriter from 'typewriter-effect/dist/core';
+import {cloudAnimation} from "./util/cloud-animation.js"
 // import {send} from './util/send-form';
 
 const application = Application.start()
@@ -158,6 +159,7 @@ const about = document.querySelector(`.about`);
 const cta = document.querySelector(`.cta`);
 const consultation = document.querySelector(`.consultation`);
 const chatMessages = document.querySelectorAll(`.chat__item`);
+const deliveryNumbers = document.querySelectorAll(`.page-info__number`)
 let isChatAnimate = true;
 
 window.addEventListener(`scroll`, () => {
@@ -179,6 +181,14 @@ window.addEventListener(`scroll`, () => {
     if(window.pageYOffset >= (getCoords(consultation).top - 150)) {
       consultation.classList.add(`consultation--active`);
     }
+  }
+
+  if(deliveryNumbers) {
+    deliveryNumbers.forEach(it => {
+      if(window.pageYOffset >= (getCoords(it).top - 500)) {
+        it.classList.add(`page-info__number--active`)
+      }
+    })
   }
 })
 
@@ -373,3 +383,13 @@ forms.forEach(it => {
   });
 })
 // ******************************************************************
+
+// Анимация облаков ****************************************************
+  const wordsWrappers = document.querySelectorAll(`.page-info__item--img`);
+
+  if (window.matchMedia("(min-width: 1200px)").matches) {
+    wordsWrappers.forEach(it => {
+      cloudAnimation(it);
+    })
+  }
+// *******************************************************************

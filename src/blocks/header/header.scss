@@ -80,8 +80,9 @@
   }
 
   .header__language {
-    display: block;
-    height: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 27px;
     position: absolute !important;
     right: 0;
     top: 0;
@@ -90,6 +91,7 @@
 
     &:hover {
       height: 100%;
+      padding-bottom: 40px;
 
       &::before {
         top: 11px;

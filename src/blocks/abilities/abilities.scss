@@ -1,7 +1,7 @@
 .abilities {
   padding: 30px 20px 0 20px;
 
-  &--last {
+  &:last-of-type {
     .abilities__wrapper {
       border-bottom: none;
     }
