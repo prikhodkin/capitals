@@ -1,5 +1,33 @@
 .request {
   overflow: hidden;
+
+  // стили для ОТДЕЛЬНОГО блока ******
+  &--light {
+    .request__inner {
+      background-color: #F4F7FF;
+      padding-top: 225px;
+      margin-top: 60px;
+    }
+
+    .request__img {
+      top: -90px;
+    }
+
+    .request__title,
+    .request__description {
+      color: black;
+    }
+
+    input {
+      background-color: white;
+      color: black;
+      border: 1px solid rgba(black, 0.1);
+    }
+
+    label {
+      color: rgba(black, 0.5);
+    }
+  }
 }
 
 .request__inner {
@@ -63,6 +91,19 @@
   .request__content {
     max-width: 50%;
   }
+
+  .request {
+    &--light {
+      .request__inner {
+        padding-top: 50px;
+      }
+
+      .request__img {
+        top: 0;
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -104,7 +145,7 @@
   }
 
   .request__img {
-    top: -143px;
+    top: -143px !important;
     right: -240px;
     width: 915px;
   }
