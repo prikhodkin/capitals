@@ -160,7 +160,7 @@ const styles = [
   }
 ]
 
-const image = '../img/custom-pin.svg';
+const image = 'img/custom-pin.svg';
 
 export const map = () => {
   // google.maps.event.addDomListener(window, 'load', initMap);
