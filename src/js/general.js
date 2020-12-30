@@ -452,7 +452,7 @@ const send = (evt) => {
   const {target} = evt;
   const formData = new FormData(target);
   if (formValidate(target)) {
-      ajaxSend(global.ajax_url, 'post', formData).then((data) => console.log(data));
+      ajaxSend(window.global.ajax_url, 'post', formData).then((data) => console.log(data));
       target.reset();
   } else {
       console.log("error")
