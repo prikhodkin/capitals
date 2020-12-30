@@ -15,6 +15,14 @@
   }
 }
 
+.block2-about-company__box {
+  p {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .block2-about-company {
     margin-top: 50px;
@@ -32,6 +40,10 @@
   .block2-about-company__box {
     width: 535px;
     align-self: center;
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
   }
 
   .block2-about-company__img {

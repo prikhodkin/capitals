@@ -5,6 +5,7 @@ import {debounce} from "./util";
 import Tabs from "%modules%/tabs/tabs";
 import Typewriter from 'typewriter-effect/dist/core';
 import {cloudAnimation} from "./util/cloud-animation.js"
+import { map } from "./util/map";
 // import {send} from './util/send-form';
 
 const application = Application.start()
@@ -393,3 +394,8 @@ forms.forEach(it => {
     })
   }
 // *******************************************************************
+
+const mapBox = document.querySelector(`#map`);
+if (mapBox) {
+  map();
+}

@@ -43,6 +43,14 @@
     height: 32px;
     position: absolute;
   }
+
+  img {
+    position: absolute;
+  }
+
+  p {
+    padding-left: 48px;
+  }
 }
 
 .block-buyout__text {
@@ -81,6 +89,10 @@
       content: "";
       width: 44px;
       height: 44px;
+    }
+
+    p {
+      padding-left: 70px;
     }
   }
 }

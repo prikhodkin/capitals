@@ -16,8 +16,17 @@
   }
 
   .menu-inside__item {
-    padding-right: 20px;
+    padding-right: 25px;
     margin-left: 5px;
+    position: relative;
+
+    svg {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 6px;
+      right: 10px;
+    }
   }
 
   .menu-inside__sub-list {
@@ -27,37 +36,26 @@
     padding: 20px;
     background-color: white;
     border-bottom: 5px solid #EF4932;
+    white-space: nowrap;
   }
 
   .menu-inside__item:hover {
     & .menu-inside__link {
       color: black;
-
-        &::after {
-          transition: 0.2s;
-          transform: rotate(180deg);
-        }
-
     }
     & p + .menu-inside__sub-list {
       display: block;
     }
+    svg {
+      transition: 0.2s;
+      transform: rotate(180deg);
+    }
+
   }
 
   .menu-inside__link {
     font-size: 15px;
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      right: -20px;
-      top: 4px;
-      width: 15px;
-      height: 15px;
-      background: no-repeat center url("../img/arrow__down.png");
-    }
   }
 
   .menu-inside__sub-item {

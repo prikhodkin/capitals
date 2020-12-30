@@ -1,5 +1,5 @@
 .guarantees {
-  padding: 20px;
+  padding: 20px 0;
 }
 .guarantees__list {
   list-style: none;
@@ -28,6 +28,10 @@
     height: auto;
     width: 22px;
   }
+}
+
+.guarantees__wrapper {
+  padding-left: 20px;
 }
 
 .guarantees__name {
