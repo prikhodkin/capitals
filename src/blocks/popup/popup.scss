@@ -39,6 +39,19 @@
   transition: opacity 0.3s, transform 0.5s;
 }
 
+.popup__img-wrapper {
+  width: 150px;
+  height: 150px;
+  background-color: $c-accent;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  img {
+    width: 70%
+  }
+}
+
 .popup__close {
   @include reset;
   position: absolute;
@@ -82,8 +95,21 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
+
+  &--thanks {
+    margin: 30px auto;
+    max-width: 200px;
+  }
 }
 
+.popup__text {
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .popup__field {
   &:not(:last-child) {
