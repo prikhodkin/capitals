@@ -365,7 +365,7 @@ const send = (evt) => {
   if (formValidate(target)) {
     ajaxSend(window.global.ajax_url, 'post', formData).then((data) => console.log(data));
     target.reset();
-    // new PopupThanks(popupThanks).openPopup()
+    new PopupThanks(popupThanks).openPopup()
   } else {
     console.log("error")
 
