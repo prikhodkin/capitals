@@ -41,12 +41,12 @@
           y: cloudBox.offsetTop - shift.y
         }
 
-        if (Math.abs(shiftCount.x) >= 50) {
+        if (Math.abs(shiftCount.x) >= 80) {
           cloudBox.style.left = newCloudCoords.x + 'px';
           shiftCount.x = 0;
         }
 
-        if (Math.abs(shiftCount.y) >=50) {
+        if (Math.abs(shiftCount.y) >= 80) {
           cloudBox.style.top = newCloudCoords.y + 'px';
           shiftCount.y = 0;
         }
