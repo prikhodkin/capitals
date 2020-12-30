@@ -20,7 +20,15 @@
     margin-top: 20px;
 
     p {
+
+      &:first-of-type {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
       &:not(:first-of-type) {
+        font-size: 12px;
+        font-weight: 400;
         margin-top: 20px;
       }
     }
@@ -44,8 +52,6 @@
 }
 
 .page-info__description {
-  font-size: 12px;
-  font-weight: 400;
   margin-top: 20px;
 }
 
@@ -239,6 +245,20 @@
 
     &:nth-child(3) {
       margin-left: 50px;
+    }
+
+    &--text {
+      p {
+
+        &:first-of-type {
+          font-size: 35px;
+        }
+
+        &:not(:first-of-type) {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
     }
   }
 

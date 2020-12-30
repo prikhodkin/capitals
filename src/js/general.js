@@ -6,6 +6,7 @@ import Tabs from "%modules%/tabs/tabs";
 import Typewriter from 'typewriter-effect/dist/core';
 import {cloudAnimation} from "./util/cloud-animation.js"
 import { map } from "./util/map";
+import {Popup} from "../blocks/popup/popup"
 // import {send} from './util/send-form';
 
 const application = Application.start()
@@ -399,3 +400,9 @@ const mapBox = document.querySelector(`#map`);
 if (mapBox) {
   map();
 }
+
+const popups = document.querySelectorAll(`.popup`);
+
+popups.forEach(it => {
+  new Popup(it)
+})
