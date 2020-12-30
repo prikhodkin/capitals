@@ -140,6 +140,30 @@
   align-items: center;
 }
 
+.offers__inner--inside {
+  .nativejs-select__placeholder {
+    background: white;
+  }
+
+  .nativejs-select__placeholder-value {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .nativejs-select__option {
+    background: white;
+    color: rgba(0, 0, 0, 0.5);
+
+    &[data-selected="true"] {
+      background: #F4F7FF;;
+    }
+  }
+
+  .nativejs-select__placeholder:after {
+    background-image: url("../img/icons/svg/icon-arrow-down.svg");
+    opacity: 0.5;
+  }
+}
+
 @media (min-width: 768px) {
   .nativejs-select__placeholder {
     font-size: 16px;

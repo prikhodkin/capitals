@@ -1,5 +1,10 @@
 export const map = () => {
-  google.maps.event.addDomListener(window, 'load', initMap);
+  // google.maps.event.addDomListener(window, 'load', initMap);
+
+  window.onload = () => {
+    initMap()
+  }
+
   let markers = [];
 
   function initMap() {
@@ -35,6 +40,7 @@ export const map = () => {
       }
     }
 
+    // Удаляем все маркеры с карты
     function clearMarkers() {
       setMapOnAll(null);
     }
@@ -43,10 +49,13 @@ export const map = () => {
       const item = e.target;
       if (item.tagName === 'LI') {
 
+        // Инициализация нового центра карты/пина
         const coords = item.getAttribute(`data-coordinates`).split(`,`)
 
+        // Очищаем карту от пинов
         clearMarkers()
 
+        // Добавляем новый маркер активного города и центруем карту
         addMarker({ lat: +coords[0], lng: +coords[1] })
         map.setCenter({ lat: +coords[0], lng: +coords[1] })
       }
