@@ -43,6 +43,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .block-guarantees__title {
@@ -85,6 +95,12 @@
   .block-guarantees__box {
     max-width: 570px;
     padding-top: 30px;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 26px;
+      }
+    }
   }
 
   .block-guarantees__wrap {

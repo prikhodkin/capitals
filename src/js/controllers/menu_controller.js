@@ -18,13 +18,13 @@ export default class extends Controller {
 
     // Проверяем наличие классов для внутренних страниц с логотипом другого цвета
     // Меняем лого
-    if (logo.classList.contains(`header-inside__logo`) && !logo.classList.contains(`header__logo--opened`)) {
-      logoImg.src = logoWhiteSrc;
-    }
+    // if (logo.classList.contains(`header-inside__logo`) && !logo.classList.contains(`header__logo--opened`)) {
+    //   logoImg.src = logoWhiteSrc;
+    // }
 
-    if (logo.classList.contains(`header-inside__logo`) && logo.classList.contains(`header__logo--opened`)) {
-      logoImg.src = logoDarkSrc;
-    }
+    // if (logo.classList.contains(`header-inside__logo`) && logo.classList.contains(`header__logo--opened`)) {
+    //   logoImg.src = logoDarkSrc;
+    // }
     //
 
     menu.classList.toggle(`menu__wrapper--opened`);
@@ -37,13 +37,13 @@ export default class extends Controller {
   close(e) {
     e.preventDefault();
 
-    if (logo.classList.contains(`header-inside__logo`) && !logo.classList.contains(`header__logo--opened`)) {
-      logoImg.src = logoWhiteSrc;
-    }
+    // if (logo.classList.contains(`header-inside__logo`) && !logo.classList.contains(`header__logo--opened`)) {
+    //   logoImg.src = logoWhiteSrc;
+    // }
 
-    if (logo.classList.contains(`header-inside__logo`) && logo.classList.contains(`header__logo--opened`)) {
-      logoImg.src = logoDarkSrc;
-    }
+    // if (logo.classList.contains(`header-inside__logo`) && logo.classList.contains(`header__logo--opened`)) {
+    //   logoImg.src = logoDarkSrc;
+    // }
     //
 
     menu.classList.toggle(`menu__wrapper--opened`);
